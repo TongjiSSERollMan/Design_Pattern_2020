@@ -1,0 +1,10 @@
+.gradle
+.vscode/
+.idea/
+build/
+out/
+
+/*.iml
+/Design_Pattern_2020.iml
+
+!src/
