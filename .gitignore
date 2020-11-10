@@ -1,6 +1,8 @@
 .gradle
 .vscode/
 .idea/
+.project
+.settings
 build/
 out/
 
