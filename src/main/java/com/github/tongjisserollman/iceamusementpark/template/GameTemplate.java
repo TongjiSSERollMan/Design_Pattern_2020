@@ -26,8 +26,8 @@ public abstract class GameTemplate {
      */
     abstract void cleanUp();
     public final void playGame() {
-        checkIn();
         initialize();
+        checkIn();
         startGame();
         endGame();
         cleanUp();
