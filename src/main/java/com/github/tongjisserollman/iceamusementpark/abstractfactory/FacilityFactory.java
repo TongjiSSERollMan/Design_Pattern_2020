@@ -5,7 +5,6 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * @author Moreonenight
  *
- *
  * 创建不同类型的游乐设施
  */
 public abstract class FacilityFactory {

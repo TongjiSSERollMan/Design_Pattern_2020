@@ -2,7 +2,6 @@ package com.github.tongjisserollman.iceamusementpark.abstractfactory;
 /**
  * @author Moreonenight
  *
- *
  * 不同类型的游乐设施
  */
 public abstract class Facility {
@@ -12,4 +11,8 @@ public abstract class Facility {
         this.facilityId = facilityId;
         this.facilityName = facilityName;
     }
+    /**
+     * 运行设施
+     */
+    public abstract void run();
 }

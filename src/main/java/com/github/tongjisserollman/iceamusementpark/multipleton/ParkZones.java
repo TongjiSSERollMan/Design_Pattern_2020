@@ -5,7 +5,6 @@ import java.util.NoSuchElementException;
 /**
  * @author Moreonenight
  *
- *
  * 游乐场的分区（影视区、游乐区、餐馆区、旅馆区）
  */
 public enum ParkZones {

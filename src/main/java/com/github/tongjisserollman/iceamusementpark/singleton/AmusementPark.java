@@ -2,7 +2,6 @@ package com.github.tongjisserollman.iceamusementpark.singleton;
 /**
  * @author Moreonenight
  *
- *
  * 游乐场本身
  */
 public enum AmusementPark {
