@@ -1,5 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.iterator;
 
+import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
+import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
+
 public class AttractionsNames implements Attractions {
 
     //推荐游览顺序数组
@@ -26,7 +29,19 @@ public class AttractionsNames implements Attractions {
             if (index < names.length) {
                 return true;
             }
+
+            CallStackLogger.log(
+                    new CallStackLogInfo(
+                            "AttractionsGuide",
+                            "hasNext",
+                            String.valueOf(System.identityHashCode(this)),
+                            "按照当前推荐游览顺序，这个景点是不是最后一个"
+                    )
+            );
+
             return false;
+
+
         }
 
         /**
@@ -37,11 +52,29 @@ public class AttractionsNames implements Attractions {
             if (this.hasNext()) {
                 return names[index++];
             }
+            CallStackLogger.log(
+                    new CallStackLogInfo(
+                            "AttractionsGuide",
+                            "next",
+                            String.valueOf(System.identityHashCode(this)),
+                            "按照guide的顺序的下一个景点"
+                    )
+            );
             return null;
         }
 
         @Override
         public int getIndex() {
+
+            CallStackLogger.log(
+                    new CallStackLogInfo(
+                            "AttractionsGuide",
+                            "getIndex",
+                            String.valueOf(System.identityHashCode(this)),
+                            "返回次序"
+                    )
+            );
+
             return index;
         }
     }
