@@ -6,7 +6,7 @@ package com.github.tongjisserollman.iceamusementpark.factory;
  */
 public interface Snack {
     /**
-     * 制造
+     * 制造小吃
      */
     void make();
 }

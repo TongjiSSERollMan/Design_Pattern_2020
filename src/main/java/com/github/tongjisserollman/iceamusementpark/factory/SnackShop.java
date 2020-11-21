@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
  */
 public class SnackShop {
     /**
-     * 小吃订单
+     * 根据订单制造小吃
      */
     public Snack orderSnack(String snackType){
         return switch (snackType) {
