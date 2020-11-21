@@ -22,7 +22,7 @@ Gradle
 
 ### 用例类
 
-所有游乐设施请继承 `FacilityTemplate` 类。'
+所有游乐设施请继承 `FacilityTemplate` 类。
 
 在类方法中记得加入 `CallStackLogger`，格式如下：
 
@@ -44,6 +44,13 @@ CallStackLogger.log(
 测试类应当包含 Assert 语句。Junit 提供的 Assert 语句参见
 [此文档](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html)
 。
+
+### 注意项目说明中的要求
+
+> 代码中每个函数的功能必须写上注释。其他必要处给出足够的文字说明，提高程序可读性，也为完成测试者提供方便。
+
+> 采用命令行程序，与设计模式无关的部分尽量简化。一个main函数。使用设计框架中尽量所有的设计模式，用注释说明使用的是哪个设计模式。如果可能尽量用类似cout/printf( classname: (objectid) : method name ：action description )形式来打印输出。
+
 
 ## 关于命令行
 
