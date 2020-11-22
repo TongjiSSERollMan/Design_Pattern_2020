@@ -7,6 +7,9 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
  * @author hq
  */
 public class FacilityOriginal implements Facility {
+    /**
+     * 具体构件角色:初始游乐设施
+     */
     @Override
     public void display() {
         CallStackLogger.log(

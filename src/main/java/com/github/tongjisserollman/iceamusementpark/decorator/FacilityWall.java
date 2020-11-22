@@ -11,7 +11,9 @@ public class FacilityWall extends FacilityDecorator{
     public FacilityWall(Facility decoratedFacility) {
         super(decoratedFacility);
     }
-
+    /**
+     * 具体装饰角色:游乐设施围墙
+     */
     @Override
     public void display() {
         CallStackLogger.log(

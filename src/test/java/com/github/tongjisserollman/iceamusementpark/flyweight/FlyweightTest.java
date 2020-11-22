@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class FlyweightTest {
 
     @Test
-    public static void main(String[] args){
+    void bgmFactory(){
         BGMFactory factory = new BGMFactory();
 
         BGM place1 = factory.getBGMName("mine");
@@ -23,6 +23,6 @@ public class FlyweightTest {
         BGM place6 = factory.getBGMName("Luv Letter");
         place6.use();
 
-        System.out.println("The number of background music is:" + factory.getBGMCount());
+//        System.out.println("The number of background music is:" + factory.getBGMCount());
     }
 }
