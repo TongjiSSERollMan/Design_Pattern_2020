@@ -1,5 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.decorator;
 
+import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
+import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
+
 /**
  * @author hq
  */
@@ -11,6 +14,14 @@ public class FacilityTiming extends FacilityDecorator{
 
     @Override
     public void display() {
+        CallStackLogger.log(
+                new CallStackLogInfo(
+                        "FacilityTiming",
+                        "display",
+                        String.valueOf(System.identityHashCode(this)),
+                        "给游乐设施增加计时功能"
+                )
+        );
         decoratedFacility.display();
         setFacilityTiming(decoratedFacility);
     }
