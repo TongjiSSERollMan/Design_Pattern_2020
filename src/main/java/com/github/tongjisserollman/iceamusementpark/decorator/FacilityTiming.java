@@ -11,7 +11,9 @@ public class FacilityTiming extends FacilityDecorator{
     public FacilityTiming(Facility decoratedFacility) {
         super(decoratedFacility);
     }
-
+    /**
+     * 具体装饰角色:游乐设施计时
+     */
     @Override
     public void display() {
         CallStackLogger.log(

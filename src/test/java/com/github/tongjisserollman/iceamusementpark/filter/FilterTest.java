@@ -1,0 +1,26 @@
+package com.github.tongjisserollman.iceamusementpark.filter;
+
+import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
+import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
+
+import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
+import java.util.List;
+/**
+ * @author hq
+ */
+public class FilterTest {
+    @Test
+    void facilityFilterTest() {
+        List<Facility> facilities = new ArrayList<Facility>();
+        facilities.add(new Facility("鬼屋", 18, "thrilling"));
+        facilities.add(new Facility("旋转茶杯", 7, "mild"));
+        facilities.add(new Facility("海盗船", 18, "thrilling"));
+        facilities.add(new Facility("摩天轮", 9, "mild"));
+
+        Criteria adult = new CriteriaAdult();
+        Criteria minor = new CriteriaMinor();
+        Criteria mild = new CriteriaMild();
+
+    }
+}

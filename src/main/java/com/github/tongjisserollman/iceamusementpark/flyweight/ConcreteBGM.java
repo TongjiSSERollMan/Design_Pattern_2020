@@ -14,13 +14,13 @@ public class ConcreteBGM implements BGM {
     @Override
     public void use() {
         System.out.println("BGM:" + name);
-//        CallStackLogger.log(
-//                new CallStackLogInfo(
-//                        "ConcreteBGM",
-//                        "use",
-//                        String.valueOf(System.identityHashCode(this)),
-//                        "Add BGM"
-//                )
-//        );
+        CallStackLogger.log(
+                new CallStackLogInfo(
+                        "ConcreteBGM",
+                        "use",
+                        String.valueOf(System.identityHashCode(this)),
+                        "Add BGM"
+                )
+        );
     }
 }
