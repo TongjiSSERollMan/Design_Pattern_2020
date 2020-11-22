@@ -19,8 +19,13 @@ public class FilterTest {
         facilities.add(new Facility("摩天轮", 9, "mild"));
 
         Criteria adult = new CriteriaAdult();
+        adult.meetCriteria(facilities);
         Criteria minor = new CriteriaMinor();
+        minor.meetCriteria(facilities);
         Criteria mild = new CriteriaMild();
+        mild.meetCriteria(facilities);
+        Criteria thrilling = new CriteriaThrilling();
+        thrilling.meetCriteria(facilities);
 
     }
 }

@@ -16,13 +16,24 @@ public class Facility {
         this.ageLowerLimit = ageUpper;
         this.type = type;
     }
-
+    /**
+     * 获取游乐设施名称
+     * @return 游乐设施名称
+     */
     public String getName() {
         return name;
     }
+    /**
+     * 获取游乐设施年龄限制
+     * @return 游乐设施年龄限制
+     */
     public int getAgeLowerLimit() {
         return ageLowerLimit;
     }
+    /**
+     * 获取游乐设施类型
+     * @return 游乐设施类型
+     */
     public String getType() {
         return type;
     }

@@ -8,16 +8,16 @@ import java.util.List;
 /**
  * @author hq
  */
-public class CriteriaMinor implements Criteria{
+public class CriteriaThrilling implements Criteria{
     /**
-     * 获取未成年人可玩的游乐设施
+     * 获取惊险刺激类的游乐设施
      * @return 目标游乐设施
      */
     @Override
     public List<Facility> meetCriteria(List<Facility> facilities) {
         List<Facility> targetFacilities = new ArrayList<Facility>();
         for (Facility facility : facilities) {
-            if(facility.getAgeLowerLimit() < 18){
+            if(facility.getType().equalsIgnoreCase("thrilling")){
                 targetFacilities.add(facility);
             }
         }
@@ -30,10 +30,10 @@ public class CriteriaMinor implements Criteria{
 
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "CriteriaMinor",
+                        "CriteriaThrilling",
                         "meetCriteria",
                         String.valueOf(System.identityHashCode(this)),
-                        "Minor:\n" + msg
+                        "Thrilling:\n" + msg
                 )
         );
         return targetFacilities;
