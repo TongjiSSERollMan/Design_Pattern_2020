@@ -4,7 +4,6 @@ package com.github.tongjisserollman.iceamusementpark.abstractfactory;
  *
  * 不同类型的游乐设施
  */
-@Deprecated
 public abstract class Facility {
     protected int facilityId;
     protected String facilityName;

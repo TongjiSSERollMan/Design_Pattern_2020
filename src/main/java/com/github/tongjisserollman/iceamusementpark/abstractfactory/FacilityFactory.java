@@ -7,7 +7,6 @@ import java.lang.reflect.InvocationTargetException;
  *
  * 创建不同类型的游乐设施
  */
-@Deprecated
 public abstract class FacilityFactory {
     public static FacilityFactory getFactory(String classname) {
         FacilityFactory factory = null;
