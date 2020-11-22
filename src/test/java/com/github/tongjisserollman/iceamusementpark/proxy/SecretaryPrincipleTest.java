@@ -4,14 +4,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SecretaryPrincipleTest {
 
-    public static void main(String[] args){
-        Principal task = new SecretaryPrinciple("召集所有员工开会。");
-
+    @org.junit.jupiter.api.Test
+    public void secretaryPrincipleTest(){
+        Principal secretaryPrinciple = new SecretaryPrinciple("请秘书召集所有员工开会。");
+        Principal realPrinciple = new RealPrincipal("召集所有员工开会");
         //执行任务
-        task.performTask();
-        System.out.println("\n");
+        realPrinciple.performTask();
+        System.out.println("请秘书");
 
-        task.performTask();
+        secretaryPrinciple.performTask();
     }
 
 }
