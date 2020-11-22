@@ -2,7 +2,7 @@
 
 同济大学软件学院 2020-2021 学年 第 1 学期设计模式课程小组项目
 
-[English Version](https://github.com/TongjiSSERollMan/Design_Pattern_2020/commits/master/README-eng.md)
+[English Version](https://github.com/TongjiSSERollMan/Design_Pattern_2020/blob/master/README-eng.md)
 
 ## 项目依赖
 
@@ -16,13 +16,15 @@ Gradle
 
 ### 代码风格
 
-[阿里巴巴 Java 编写指南](https://github.com/alibaba/Alibaba-Java-Coding-Guidelines.git)
+~~[阿里巴巴 Java 编写指南](https://github.com/alibaba/Alibaba-Java-Coding-Guidelines.git)~~
 
 文件命名方式参见下文项目结构。
 
 ### 用例类
 
-所有游乐设施请继承 `FacilityTemplate` 类。
+~~所有游乐设施请继承 `FacilityTemplate` 类。~~
+
+游乐设施无需继承 `FacilityTemplate` 类。
 
 在类方法中记得加入 `CallStackLogger`，格式如下：
 
@@ -44,6 +46,7 @@ CallStackLogger.log(
 测试类应当包含 Assert 语句。Junit 提供的 Assert 语句参见
 [此文档](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html)
 。
+
 
 ### 注意项目说明中的要求
 
