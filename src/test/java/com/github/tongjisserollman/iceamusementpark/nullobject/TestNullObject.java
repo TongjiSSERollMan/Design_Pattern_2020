@@ -1,0 +1,22 @@
+package com.github.tongjisserollman.iceamusementpark.nullobject;
+
+class TestNullObject {
+    @org.junit.jupiter.api.Test
+    void nullObjectTest(){
+        System.out.println("空对象模式测试：");
+
+        String[] names = {"魔术师赫敏","教授邓布利多","歌唱家哈利","角斗士罗恩","家养小精灵多比"};
+
+        AbstractActor[] actor = new AbstractActor[names.length];
+        for (int i =0;i<names.length;i++){
+            actor[i]=ActorFactory.getActor(names[i]);
+        }
+        for (AbstractActor abstractActor : actor) {
+            if (abstractActor.isNull()) {
+                System.out.println("现在没有人表演，游客们可以自由使用！");
+            } else {
+                System.out.println("现在给我们带来表演的是" + abstractActor.getName() + "！");
+            }
+        }
+    }
+}
