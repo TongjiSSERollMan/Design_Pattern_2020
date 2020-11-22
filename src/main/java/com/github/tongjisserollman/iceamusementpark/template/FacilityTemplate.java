@@ -8,9 +8,8 @@ public abstract class FacilityTemplate {
     protected int facilityId;
     protected String facilityName;
     static private int myId = 0;
-    public FacilityTemplate(String facilityName) {
-        this.facilityId = myId;
-        myId++;
+    public FacilityTemplate(int facilityId, String facilityName) {
+        this.facilityId = facilityId;
         this.facilityName = facilityName;
     }
     public FacilityTemplate() {
