@@ -1,10 +1,10 @@
 package com.github.tongjisserollman.iceamusementpark.singleton;
 
-
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SingletonTest {
-    @org.junit.jupiter.api.Test
+    @Test
     void parkTest() {
         AmusementPark park1 = AmusementPark.getInstance();
         AmusementPark park2 = AmusementPark.getInstance();

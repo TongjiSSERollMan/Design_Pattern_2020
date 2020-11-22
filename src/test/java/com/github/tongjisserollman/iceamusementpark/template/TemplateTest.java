@@ -1,33 +1,44 @@
 package com.github.tongjisserollman.iceamusementpark.template;
 
-
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TemplateTest extends GameTemplate{
-    StringBuffer testBuffer = new StringBuffer("");
+public class TemplateTest{
+    @Test
+    void gameTest() {
+        MyGame myGame = new MyGame();
+        myGame.playGame();
+        assertEquals(myGame.getTestBuffer().toString(), "This test is very successful!");
+    }
+}
+
+class MyGame extends GameTemplate{
+    StringBuffer testBuffer = new StringBuffer();
     @Override
-    void initialize() {
-        testBuffer.append("This ");;
-        }
+    public void initialize() {
+        testBuffer.append("This ");
+    }
     @Override
-    void checkIn() {
+    public void checkIn() {
         testBuffer.append("test ");
     }
     @Override
-    void startGame() {
+    public void startGame() {
         testBuffer.append("is ");
     }
     @Override
-    void endGame() {
+    public void run() {
+        testBuffer.append("very ");
+    }
+    @Override
+    public void endGame() {
         testBuffer.append("successful");
     }
     @Override
-    void cleanUp() {
+    public void cleanUp() {
         testBuffer.append("!");
     }
-    @org.junit.jupiter.api.Test
-    void gameTest() {
-        playGame();
-        assertEquals(testBuffer.toString(), "This test is successful!");
+    public StringBuffer getTestBuffer() {
+        return testBuffer;
     }
 }
