@@ -15,10 +15,10 @@ public class ImmutableData {
     public void run(){
         ParkData parkData = new ParkData("HappyRollMan", 996.0, new Date(), "Unnamed");
 
-        String msg = "游乐园名称为:" + parkData.getParkName() + "\n"
-                + "园区面积为:" + parkData.getArea() + "\n"
-                + "建园时间为:" + parkData.getCreatedTime() + "\n"
-                + "创始人姓名为:" + parkData.getCreatorName() + "\n";
+        String msg = "游乐园名称为:" + parkData.getParkName() + ","
+                + "园区面积(平方公里)为:" + parkData.getArea() + ","
+                + "建园时间为:" + parkData.getCreatedTime() + ","
+                + "创始人姓名为:" + parkData.getCreatorName() + ",";
 
         CallStackLogger.log(
                 new CallStackLogInfo(
