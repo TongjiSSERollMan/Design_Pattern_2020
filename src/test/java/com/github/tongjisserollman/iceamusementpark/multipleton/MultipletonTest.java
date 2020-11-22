@@ -1,10 +1,10 @@
 package com.github.tongjisserollman.iceamusementpark.multipleton;
 
-
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MultipletonTest {
-    @org.junit.jupiter.api.Test
+    @Test
     void zonesTest() {
         String[] zonesName = {"movieZone", "amusementZone", "restaurantZone", "hotelZone"};
         for (int i = 0; i < zonesName.length; i++){

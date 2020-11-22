@@ -22,10 +22,9 @@ public abstract class FacilityFactory {
     /**
      * 创建设施的方法
      *
-     * @param facilityId 设施的编号，应当在全游乐场范围内唯一
      * @param facilityName 设施的名字，用以招徕顾客
-     * @return Facility Created
+     * @return 创建的设施
      *
      */
-    public abstract Facility createFacility(int facilityId, String facilityName);
+    public abstract Facility createFacility(String facilityName);
 }
