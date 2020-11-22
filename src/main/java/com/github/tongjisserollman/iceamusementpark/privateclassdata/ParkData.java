@@ -65,5 +65,4 @@ public class ParkData {
     public String getCreatorName(){
         return creatorName;
     }
-
 }
