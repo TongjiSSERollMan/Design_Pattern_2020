@@ -1,10 +1,10 @@
 package com.github.tongjisserollman.iceamusementpark.multipleton;
 
-
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MultipletonTest {
-    @org.junit.jupiter.api.Test
+    @Test
     void zonesTest() {
         String[] zonesName = {"movieZone", "amusementZone", "restaurantZone", "hotelZone"};
         for (int i = 0; i < zonesName.length; i++){
@@ -17,5 +17,10 @@ public class MultipletonTest {
                 assertNotSame(zone3, zone4);
             }
         }
+        String out1 = ParkZones.getInstance("movieZone").toString();
+        String out2 = ParkZones.getInstance("amusementZone").toString();
+        String out3 = ParkZones.getInstance("restaurantZone").toString();
+        String out4 = ParkZones.getInstance("hotelZone").toString();
+        System.out.println("游乐园的分区包括：" + out1 + " " + out2 + " " + out3 + " " + out4);
     }
 }
