@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.nullobject;
 
-class TestNullObject {
+class testNullObject {
     @org.junit.jupiter.api.Test
     void nullObjectTest(){
         System.out.println("空对象模式测试：");

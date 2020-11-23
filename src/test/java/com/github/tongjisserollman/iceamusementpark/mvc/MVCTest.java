@@ -2,7 +2,7 @@ package com.github.tongjisserollman.iceamusementpark.mvc;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestMVC {
+class testMVC {
     @org.junit.jupiter.api.Test
     void mvcTest(){
         System.out.println("MVC模式测试：");
