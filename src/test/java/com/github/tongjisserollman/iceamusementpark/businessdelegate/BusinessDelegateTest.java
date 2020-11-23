@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class BusinessDelegateTest {
 
     @Test
-    void DirectorDelegateTest(){
+    void directorDelegateTest(){
         DirectorsDelegate directorsDelegate = new DirectorsDelegate();
         directorsDelegate.setServiceType("Plan");
 
