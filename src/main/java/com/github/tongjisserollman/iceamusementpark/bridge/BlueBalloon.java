@@ -3,6 +3,12 @@ package com.github.tongjisserollman.iceamusementpark.bridge;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
+/**
+ * @author Mrcopytuo
+ *
+ * 蓝色气球类
+ */
+
 public class BlueBalloon implements MakeAPI{
     @Override
     public void makeBalloon(String shape) {

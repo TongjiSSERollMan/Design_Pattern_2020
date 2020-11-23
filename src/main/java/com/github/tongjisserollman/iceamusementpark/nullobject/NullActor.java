@@ -3,6 +3,12 @@ package com.github.tongjisserollman.iceamusementpark.nullobject;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
+/**
+ * @author Mrcopytuo
+ *
+ * 演员空对象
+ */
+
 public class NullActor extends AbstractActor {
     @Override
     public boolean isNull() {
