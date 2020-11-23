@@ -3,6 +3,12 @@ package com.github.tongjisserollman.iceamusementpark.bridge;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
+/**
+ * @author Mrcopytuo
+ *
+ * 小狗形状类
+ */
+
 public class DogShape extends Shape {
     private String str = "小狗";
     public DogShape(MakeAPI makeAPI){

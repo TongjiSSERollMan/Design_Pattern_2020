@@ -3,7 +3,17 @@ package com.github.tongjisserollman.iceamusementpark.mvc;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
+/**
+ * @author Mrcopytuo
+ *
+ * 旋转木马视图
+ */
+
 public class CarouselView {
+
+    /**
+     * 视图输出当前model的信息
+     */
     public void printCarouselDetails(String name, double speed){
         CallStackLogger.log(
                 new CallStackLogInfo(

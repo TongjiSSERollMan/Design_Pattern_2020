@@ -3,6 +3,12 @@ package com.github.tongjisserollman.iceamusementpark.bridge;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
+/**
+ * @author Mrcopytuo
+ *
+ * 飞机形状类
+ */
+
 public class PlaneShape extends Shape {
     private String str = "飞机";
     public PlaneShape(MakeAPI makeAPI){

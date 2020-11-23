@@ -3,7 +3,16 @@ package com.github.tongjisserollman.iceamusementpark.nullobject;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
+/**
+ * @author Mrcopytuo
+ *
+ * 演员类
+ */
+
 public class RealActor extends AbstractActor {
+    /**
+     * RealActor构造器
+     */
     public RealActor(String name){
         this.name=name;
         CallStackLogger.log(
