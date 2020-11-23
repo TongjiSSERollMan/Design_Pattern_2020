@@ -8,7 +8,7 @@ public class NullActor extends AbstractActor {
 
     @Override
     public String getName() {
-        return "";
+        return "...哦，现在没有人为我们表演，大家可以自由使用舞台！";
     }
 
 }

@@ -12,11 +12,7 @@ class TestNullObject {
             actor[i]=ActorFactory.getActor(names[i]);
         }
         for (AbstractActor abstractActor : actor) {
-            if (abstractActor.isNull()) {
-                System.out.println("现在没有人表演，游客们可以自由使用！");
-            } else {
-                System.out.println("现在给我们带来表演的是" + abstractActor.getName() + "！");
-            }
+            System.out.println("现在给我们带来表演的是" + abstractActor.getName() + "！");
         }
     }
 }
