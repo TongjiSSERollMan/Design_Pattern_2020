@@ -24,7 +24,7 @@ public class CarouselController {
         return model.getSpeed();
     }
     public void updateView(){
-        System.out.println("控制器进行一次输出：");
+        System.out.println("控制器发送一次输出命令：");
         view.printCarouselDetails(model.getName(), model.getSpeed());
     }
 }
