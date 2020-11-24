@@ -9,7 +9,7 @@ public class Employee {
     public String office;
     public String home;
 
-    Employee(String name, String id, String office, String home){
+    public Employee(String name, String id, String office, String home){
         this.name = name;
         this.id = id;
         this.office = office;
