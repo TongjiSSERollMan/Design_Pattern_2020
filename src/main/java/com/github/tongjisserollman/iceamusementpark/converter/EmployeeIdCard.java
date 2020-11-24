@@ -6,7 +6,7 @@ public class EmployeeIdCard {
     public String id;
     public String name;
 
-    EmployeeIdCard(String id, String name){
+    public EmployeeIdCard(String id, String name){
         this.id = id;
         this.name = name;
     }
