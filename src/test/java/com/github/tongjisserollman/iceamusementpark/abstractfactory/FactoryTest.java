@@ -1,38 +1,26 @@
 package com.github.tongjisserollman.iceamusementpark.abstractfactory;
 
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.CarvedPeopleA;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.CarvedThingsA;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.IceCarvingSectorTypeA;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.CarvedPeopleB;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.CarvedThingsB;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.IceCarvingSectorTypeB;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class FactoryTest {
     @Test
     void MyFactoryTest() {
-        MyFactory myFactory = new MyFactory();
-        MyFacility testFacility = myFactory.createFacility("摸鱼天堂");
-        assertEquals(testFacility.getFacilityName(), "摸鱼天堂");
-        assertFalse(testFacility.hasRun);
-        testFacility.run();
-        assertTrue(testFacility.hasRun);
+        IceCarvingSectorTypeA sector1 = new IceCarvingSectorTypeA();
+        IceCarvingSectorTypeB sector2 = new IceCarvingSectorTypeB();
+        CarvedPeopleA carved1 = sector1.createCarvedPeople("小明");
+        CarvedThingsA carved2 = sector1.createCarvedThings("大象");
+        CarvedPeopleB carved3 = sector2.createCarvedPeople("小红");
+        CarvedThingsB carved4 = sector2.createCarvedThings("橡皮");
+        carved1.run();
+        carved2.run();
+        carved3.run();
+        carved4.run();
     }
 }
 
-class MyFactory extends FacilityFactory{
-    @Override
-    public MyFacility createFacility(String facilityName) {
-        return new MyFacility(facilityName);
-    }
-}
-
-class MyFacility extends Facility{
-    public boolean hasRun = false;
-    MyFacility(String name){
-        super(name);
-    }
-    MyFacility(){
-        super();
-    }
-    @Override
-    public void run() {
-        hasRun = true;
-    }
-}
