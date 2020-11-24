@@ -1,6 +1,5 @@
 package com.github.tongjisserollman.iceamusementpark.observer;
 
-import com.github.tongjisserollman.iceamusementpark.abstractfactory.Facility;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
