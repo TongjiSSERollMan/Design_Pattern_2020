@@ -34,9 +34,8 @@ public class WorkerBusinessObject {
     /**
      * 添加员工
      */
-    public void addWorker(String name, int id){
-        WorkerTransferObject worker = new WorkerTransferObject(name,id);
-        workerMap.put(id,worker);
+    public void addWorker(WorkerTransferObject worker){
+        workerMap.put(worker.getId(),worker);
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "WorkerBusinessObject",

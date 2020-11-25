@@ -10,22 +10,9 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
  * 商店类
  */
 
-public class Shop {
-    private String name;
-
-    /**
-     * 商店名getter
-     */
-    public String getName(){
-        return name;
-    }
-
-    /**
-     * 商店名setter
-     */
-    public void setName(String str){
-        this.name=str;
-    }
+public abstract class Shop {
+    protected String name;
+    protected GoodsMediator goodsMediator;
 
     /**
      * Shop构造器
@@ -43,17 +30,54 @@ public class Shop {
     }
 
     /**
-     * 商店汇报自己的缺货信息
+     * 商店名getter
      */
-    public void sendLackMessage(String str){
+    public String getName(){
+        return name;
+    }
+
+    /**
+     * 商店名setter
+     */
+    public void setName(String str){
+        this.name=str;
+    }
+
+    /**
+     * 中介系统getter
+     */
+    public GoodsMediator getGoodsMediator(){
+        return goodsMediator;
+    }
+
+    /**
+     * 设置商店的中介系统
+     */
+    public void setGoodsMediator(GoodsMediator goodsMediator){
+        this.goodsMediator=goodsMediator;
+        CallStackLogger.log(
+                new CallStackLogInfo(
+                        "Shop",
+                        "setGoodsMediator",
+                        String.valueOf(System.identityHashCode(this)),
+                        "设置商店的中介系统"
+                )
+        );
+        goodsMediator.addShop(this);
+    }
+
+    /**
+     * 商店汇报自己的需求信息
+     */
+    public void sendMessage(String str){
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "Shop",
                         "sendLackMessage",
                         String.valueOf(System.identityHashCode(this)),
-                        "商店汇报自己的缺货信息"
+                        "商店汇报自己的需求信息"
                 )
         );
-        Mediator.tellLack(this,str);
+        goodsMediator.tellMsg(this,str);
     }
 }
