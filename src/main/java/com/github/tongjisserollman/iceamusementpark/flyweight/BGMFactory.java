@@ -27,7 +27,7 @@ public class BGMFactory {
                     new CallStackLogInfo(
                             "BGMFactory",
                             "getBGM",
-                            String.valueOf(System.identityHashCode(this)),
+                            String.valueOf(System.identityHashCode(111111)),
                             "新增BGM:" + name
                     )
             );
