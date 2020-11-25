@@ -2,9 +2,9 @@ package com.github.tongjisserollman.iceamusementpark.abstractfactory;
 /**
  * @author Moreonenight
  *
- * 人形冰雕
+ * 人形雪雕
  */
-public abstract class CarvedPeople extends IceCarving{
+public abstract class CarvedPeople extends SnowCarving {
     public CarvedPeople(String carvedName) {
         super(carvedName);
     }

@@ -6,7 +6,7 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 /**
  * @author Moreonenight
  *
- * 浮雕类型的物品状冰雕
+ * 浮雕类型的物品状雪雕
  */
 public class CarvedThingsA extends CarvedThings {
     public CarvedThingsA(String carvedName) {
@@ -19,7 +19,7 @@ public class CarvedThingsA extends CarvedThings {
                         "CarvedThingsInA",
                         "run",
                         String.valueOf(System.identityHashCode(this)),
-                        "浮雕园区的物品状冰雕上亮起了彩灯"
+                        "浮雕园区的物品状雪雕上亮起了彩灯"
                 )
         );
     }

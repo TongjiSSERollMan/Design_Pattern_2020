@@ -1,12 +1,12 @@
 package com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b;
 
-import com.github.tongjisserollman.iceamusementpark.abstractfactory.IceCarvingFactory;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.SnowCarvingFactory;
 /**
  * @author Moreonenight
  *
- * 圆雕类型的冰雕园地
+ * 圆雕类型的雪雕园地
  */
-public class IceCarvingSectorTypeB extends IceCarvingFactory {
+public class SnowCarvingSectorTypeB extends SnowCarvingFactory {
     @Override
     public CarvedPeopleB createCarvedPeople(String carvedName) {
         return new CarvedPeopleB(carvedName);

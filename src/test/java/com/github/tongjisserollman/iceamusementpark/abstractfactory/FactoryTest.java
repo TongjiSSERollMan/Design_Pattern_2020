@@ -2,17 +2,17 @@ package com.github.tongjisserollman.iceamusementpark.abstractfactory;
 
 import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.CarvedPeopleA;
 import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.CarvedThingsA;
-import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.IceCarvingSectorTypeA;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.a.SnowCarvingSectorTypeA;
 import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.CarvedPeopleB;
 import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.CarvedThingsB;
-import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.IceCarvingSectorTypeB;
+import com.github.tongjisserollman.iceamusementpark.abstractfactory.sector.b.SnowCarvingSectorTypeB;
 import org.junit.jupiter.api.Test;
 
 public class FactoryTest {
     @Test
     void MyFactoryTest() {
-        IceCarvingSectorTypeA sector1 = new IceCarvingSectorTypeA();
-        IceCarvingSectorTypeB sector2 = new IceCarvingSectorTypeB();
+        SnowCarvingSectorTypeA sector1 = new SnowCarvingSectorTypeA();
+        SnowCarvingSectorTypeB sector2 = new SnowCarvingSectorTypeB();
         CarvedPeopleA carved1 = sector1.createCarvedPeople("小明");
         CarvedThingsA carved2 = sector1.createCarvedThings("大象");
         CarvedPeopleB carved3 = sector2.createCarvedPeople("小红");
