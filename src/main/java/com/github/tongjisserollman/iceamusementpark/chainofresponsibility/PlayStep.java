@@ -51,7 +51,6 @@ public abstract class PlayStep {
                 this.next.playStepRequest(request);
             }
             else {
-                System.out.println("鬼屋游玩步骤错误");
                 CallStackLogger.log(
                         new CallStackLogInfo(
                                 "PlayStep",

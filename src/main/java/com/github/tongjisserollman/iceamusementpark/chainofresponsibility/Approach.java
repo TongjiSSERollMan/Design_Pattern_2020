@@ -17,7 +17,6 @@ public class Approach extends PlayStep{
 
     @Override
     protected void go() {
-        System.out.println("鬼屋进场");
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "Approach",

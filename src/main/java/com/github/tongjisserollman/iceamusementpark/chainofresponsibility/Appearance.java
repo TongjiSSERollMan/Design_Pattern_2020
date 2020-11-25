@@ -17,7 +17,6 @@ public class Appearance extends PlayStep{
 
     @Override
     protected void go() {
-        System.out.println("鬼屋出场");
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "Appearance",

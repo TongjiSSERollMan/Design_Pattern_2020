@@ -17,7 +17,6 @@ public class BuyTicket extends PlayStep {
 
     @Override
     protected void go() {
-        System.out.println("鬼屋买票");
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "BuyTicket",
