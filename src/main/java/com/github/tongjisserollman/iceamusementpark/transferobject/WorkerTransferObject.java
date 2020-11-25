@@ -11,13 +11,15 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
 public class WorkerTransferObject {
     private String name;
+    private String job;
     private int id;
 
     /**
      * WorkerTransferObject构造器
      */
-    WorkerTransferObject(String name, int id){
+    WorkerTransferObject(int id, String name, String job){
         this.name=name;
+        this.job=job;
         this.id=id;
         CallStackLogger.log(
                 new CallStackLogInfo(
@@ -60,6 +62,21 @@ public class WorkerTransferObject {
     }
 
     /**
+     *职业 getter
+     */
+    public String getJob(){
+        CallStackLogger.log(
+                new CallStackLogInfo(
+                        "WorkerTransferObject",
+                        "getJob",
+                        String.valueOf(System.identityHashCode(this)),
+                        "职业 getter"
+                )
+        );
+        return job;
+    }
+
+    /**
      * 姓名setter
      */
     public void setName(String name){
@@ -87,5 +104,20 @@ public class WorkerTransferObject {
                 )
         );
         this.id=id;
+    }
+
+    /**
+     * 职业 setter
+     */
+    public void  setJob(String job){
+        CallStackLogger.log(
+                new CallStackLogInfo(
+                        "WorkerTransferObject",
+                        "setJob",
+                        String.valueOf(System.identityHashCode(this)),
+                        "职业 setter"
+                )
+        );
+        this.job=job;
     }
 }
