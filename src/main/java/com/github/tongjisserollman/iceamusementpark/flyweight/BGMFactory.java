@@ -13,7 +13,7 @@ public class BGMFactory {
     private static final HashMap<String, BGM> pool = new HashMap<String, BGM>();
 
     /**
-     * @description: 根据name获取对应的Ingredient对象。
+     * @description: 根据name获取对应的BGM对象。
      * 如果该bgm已被实例化过，则返回其引用
      * 否则添加一个新的bgm
      */
