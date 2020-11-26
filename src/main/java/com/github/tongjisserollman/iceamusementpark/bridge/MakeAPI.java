@@ -8,6 +8,8 @@ package com.github.tongjisserollman.iceamusementpark.bridge;
 public interface MakeAPI {
     /**
      * 制作气球函数
+     *
+     * @param shape 气球的形状
      */
     public void makeBalloon(String shape);
 }

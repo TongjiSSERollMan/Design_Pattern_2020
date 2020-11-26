@@ -23,6 +23,7 @@ public abstract class SnowCarving {
     public void setCarvedName(String carvedName) {
         this.carvedName = carvedName;
     }
+
     /**
      * 启动雪雕上的彩灯及其他装饰物
      */

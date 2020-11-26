@@ -18,7 +18,7 @@ public class RedBalloon implements MakeAPI{
                         "RedBalloon",
                         "makeBalloon",
                         String.valueOf(System.identityHashCode(this)),
-                        "做一个红色的气球"
+                        String.format("做一个红色的%s形状的气球", shape)
                 )
         );
     }

@@ -19,7 +19,7 @@ public class CarvedPeopleB extends CarvedPeople {
                         "CarvedThingsInB",
                         "run",
                         String.valueOf(System.identityHashCode(this)),
-                        "圆雕园区的物品状雪雕上亮起了彩灯"
+                        "圆雕园区的人形雪雕上亮起了彩灯"
                 )
         );
     }

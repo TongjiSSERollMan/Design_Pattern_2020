@@ -9,6 +9,7 @@ import java.util.List;
 public interface Criteria {
     /**
      * 过滤标准
+     *
      * @param facility 游乐设施
      * @return 过滤后符合要求的设施
      */
