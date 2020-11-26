@@ -80,4 +80,19 @@ public abstract class Shop {
         );
         goodsMediator.tellMsg(this,str);
     }
+
+    /**
+     * 商店查看其他商店的需求信息
+     */
+    public void readMessage(Shop shop){
+        CallStackLogger.log(
+                new CallStackLogInfo(
+                        "Shop",
+                        "readMessage",
+                        String.valueOf(System.identityHashCode(this)),
+                        "商店查看其他商店的需求信息"
+                )
+        );
+        System.out.println(this.getName()+"查看了"+shop.getName()+"的需求信息");
+    }
 }

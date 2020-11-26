@@ -64,7 +64,7 @@ public class GoodsMediator implements Mediator {
         System.out.println();
         for(Shop oneShop : shops){
             if(!oneShop.equals(shop)){
-                System.out.println(oneShop.getName()+"查看"+shop.getName()+"的需求");
+                oneShop.readMessage(shop);
             }
         }
     }
