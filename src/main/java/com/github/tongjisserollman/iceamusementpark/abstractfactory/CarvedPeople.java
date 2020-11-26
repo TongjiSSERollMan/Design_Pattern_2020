@@ -8,5 +8,4 @@ public abstract class CarvedPeople extends SnowCarving {
     public CarvedPeople(String carvedName) {
         super(carvedName);
     }
-    public abstract void run();
 }

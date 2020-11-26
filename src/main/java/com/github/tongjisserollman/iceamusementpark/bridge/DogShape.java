@@ -8,7 +8,6 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
  *
  * 小狗形状类
  */
-
 public class DogShape extends Shape {
     private String str = "小狗";
     public DogShape(MakeAPI makeAPI){
