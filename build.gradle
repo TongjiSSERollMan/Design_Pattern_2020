@@ -5,12 +5,10 @@
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/6.7/samples
  */
 
-
 plugins {
-    id "java"
-    id "application"
+    id 'java'
+    id 'application'
 }
-
 
 java {
     toolchain{
@@ -19,14 +17,29 @@ java {
 }
 
 application {
-    mainClass = "com.github.tongjisserollman.iceamusementpark.Main"
+    mainClass = 'com.github.tongjisserollman.iceamusementpark.Main'
     applicationDefaultJvmArgs = ['-Dfile.encoding=UTF-8']
 }
 
+run {
+    standardInput = System.in
+}
 [javadoc, compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs += ['src/test/java']
 
 test {
     useJUnitPlatform()
+}
+
+
+
+dependencies {
+    implementation 'org.junit.platform:junit-platform-launcher:1.7.0'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    runtimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
 repositories {
@@ -35,9 +48,3 @@ repositories {
     jcenter()
     mavenCentral()
 }
-
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
