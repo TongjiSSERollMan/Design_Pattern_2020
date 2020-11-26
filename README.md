@@ -78,6 +78,18 @@ Win10 自带的命令行工具 `cmd` 和 `Powershell` 默认使用 GBK 编码，
 > Set-ItemProperty 'HKCU:\Software\Microsoft\Command Processor' AutoRun ''
 ```
 
+如果提示找不到此注册表键值，请用管理员模式运行 `Powershell`（可以同时按下 Win+S，搜索 `Powershell`，选择以管理员身份运行）。然后在 `Powershell` 中输入下列命令：
+
+```
+> Set-ItemProperty 'HKLM:\Software\Microsoft\Command Processor' AutoRun 'chcp 65001 >NUL'
+```
+
+要回滚前述操作，可以在 `Powershell` 中输入下列命令：
+
+```
+> Set-ItemProperty 'HKLM:\Software\Microsoft\Command Processor' AutoRun ''
+```
+
 ### 运行全部测试
 
 ```
