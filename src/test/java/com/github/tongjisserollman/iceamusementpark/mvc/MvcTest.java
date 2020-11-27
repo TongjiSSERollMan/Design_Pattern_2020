@@ -1,10 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.mvc;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class testMVC {
+public class MvcTest {
     @org.junit.jupiter.api.Test
-    void mvcTest(){
+    void testMvc(){
         System.out.println("MVC模式测试：");
         Carousel model = new Carousel("冰天雪地飞马号",5);
         CarouselView view = new CarouselView();

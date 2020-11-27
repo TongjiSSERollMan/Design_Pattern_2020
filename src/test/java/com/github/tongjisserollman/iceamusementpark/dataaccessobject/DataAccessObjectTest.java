@@ -2,9 +2,9 @@ package com.github.tongjisserollman.iceamusementpark.dataaccessobject;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class EmployeeDaoImplTest {
+class DataAccessObjectTest {
     @org.junit.jupiter.api.Test
-    void daoTest(){
+    void testDataAccessObject(){
         EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
         int ciel_id = employeeDao.addEmployee("Ciel", 8000);
         assert (employeeDao.getAllEmployees().size() == 1);

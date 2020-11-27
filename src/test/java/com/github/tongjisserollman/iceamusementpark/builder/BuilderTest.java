@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BuilderTest {
 
     @org.junit.jupiter.api.Test
-    void builderTest() {
+    void testBuilder() {
         SmoothieDirector smoothieDirector = new SmoothieDirector();
 
         SmoothieBuilder bigAppleSmoothieBuilder = new BigAppleSmoothieBuilder();

@@ -2,7 +2,7 @@ package com.github.tongjisserollman.iceamusementpark.dependencyinjection;
 import static org.junit.jupiter.api.Assertions.*;
 public class DependencyInjectionTest {
     @org.junit.jupiter.api.Test
-    void dependencyInjectionTest(){
+    void testDependencyInjection(){
         NewsPublisher publisher = new NewsPublisher();
         OnlineNewsChannel online = new OnlineNewsChannel();
         NewspaperChannel newspaper = new NewspaperChannel();

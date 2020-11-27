@@ -1,4 +1,4 @@
-package com.github.tongjisserollman.iceamusementpark.adapter;
+package com.github.tongjisserollman.iceamusementpark.util;
 
 /**
  * @author HR8398Cephei

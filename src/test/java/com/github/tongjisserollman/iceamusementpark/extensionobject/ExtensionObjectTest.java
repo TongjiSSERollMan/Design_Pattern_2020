@@ -4,7 +4,7 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 
 class ExtensionObjectTest {
     @org.junit.jupiter.api.Test
-    void princeWarriorTest(){
+    void testExtensionObject(){
         Role princeWarriorRole = new PrinceWarriorRole("小王");
         String warriorExtensionName = WarriorExtension.class.getName();
         String princeExtensionName = PrinceExtension.class.getName();

@@ -2,14 +2,9 @@ package com.github.tongjisserollman.iceamusementpark.chainofresponsibility;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * @author hq
- */
-
-class ChainOfResponsibilityTest {
-
+public class ChainOfResponsibilityTest {
     @Test
-    void playTest() {
+    void testChainOfResponsibility() {
         ChainOfResponsibility.play();
     }
 }

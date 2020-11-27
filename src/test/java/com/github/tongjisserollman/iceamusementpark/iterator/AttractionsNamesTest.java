@@ -2,10 +2,10 @@ package com.github.tongjisserollman.iceamusementpark.iterator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AttractionsNamesTest {
+class IteratorTest {
 
     @org.junit.jupiter.api.Test
-    public void AttractionsNamesTest() {
+    public void testIterator() {
         AttractionsNames attractionsNames = new AttractionsNames();
         for (Guide guide = attractionsNames.getGuidance(); guide.hasNext(); ) {
             String placeName = (String) guide.next();

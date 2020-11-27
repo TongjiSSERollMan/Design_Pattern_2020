@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class FilterTest {
     @Test
-    void facilityFilterTest() {
+    void testFilter() {
         List<Facility> facilities = new ArrayList<Facility>();
         facilities.add(new Facility("鬼屋", 18, "thrilling"));
         facilities.add(new Facility("旋转茶杯", 7, "mild"));

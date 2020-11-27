@@ -1,8 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.nullobject;
 
-class testNullObject {
+public class NullObjectTest {
     @org.junit.jupiter.api.Test
-    void nullObjectTest(){
+    void testNullObject(){
         System.out.println("空对象模式测试：");
 
         String[] names = {"魔术师赫敏","教授邓布利多","歌唱家哈利","角斗士罗恩","家养小精灵多比"};

@@ -4,9 +4,9 @@ import java.sql.PseudoColumnUsage;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MoveServantTest {
+class ServantTest {
     @org.junit.jupiter.api.Test
-    void servantTest(){
+    void testServant(){
         Position p = new Position(3, 5);
         Rose rose = new Rose();
         rose.setPosition(p);

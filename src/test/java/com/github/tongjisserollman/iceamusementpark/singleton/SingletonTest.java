@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SingletonTest {
     @Test
-    void parkTest() {
+    void testSingleton() {
         AmusementPark park1 = AmusementPark.getInstance();
         AmusementPark park2 = AmusementPark.getInstance();
         assertSame(park1, park2);

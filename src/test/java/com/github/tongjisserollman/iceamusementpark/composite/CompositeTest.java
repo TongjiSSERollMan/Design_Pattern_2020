@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class CompositeTest {
 
     @Test
-    void iceSculptureTest() {
+    void testComposite() {
         IceSculpture wzjSculpture = new IceSculpture("wzj");
         IceSculpture lxdSculpture = new IceSculpture("lxd");
         IceSculpture jjfSculpture = new IceSculpture("jjf");

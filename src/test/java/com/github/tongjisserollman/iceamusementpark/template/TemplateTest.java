@@ -1,11 +1,12 @@
 package com.github.tongjisserollman.iceamusementpark.template;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TemplateTest{
     @Test
-    void gameTest() {
+    void testTemplate() {
         MyGame myGame = new MyGame();
         myGame.playGame();
         assertEquals(myGame.getTestBuffer().toString(), "This test is very successful!");

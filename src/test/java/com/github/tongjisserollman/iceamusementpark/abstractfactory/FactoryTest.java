@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 public class FactoryTest {
     @Test
-    void MyFactoryTest() {
+    void testFactory() {
         SnowCarvingSectorTypeA sector1 = new SnowCarvingSectorTypeA();
         SnowCarvingSectorTypeB sector2 = new SnowCarvingSectorTypeB();
         CarvedPeopleA carved1 = sector1.createCarvedPeople("小明");
