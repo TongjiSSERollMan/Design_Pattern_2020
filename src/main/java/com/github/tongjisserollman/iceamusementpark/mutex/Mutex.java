@@ -10,6 +10,9 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
  */
 public class Mutex implements Lock {
 
+    /**
+     * 线程锁的拥有者
+     */
     private Object owner;
 
     @Override

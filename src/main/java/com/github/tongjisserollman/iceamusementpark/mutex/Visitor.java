@@ -10,8 +10,14 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
  */
 public class Visitor extends Thread {
 
+    /**
+     * 游客名字
+     */
     private final String name;
 
+    /**
+     * 洗手间对象
+     */
     private final WashRoom washRoom;
 
     public Visitor(String name, WashRoom washRoom){
