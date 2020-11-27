@@ -3,7 +3,7 @@ package com.github.tongjisserollman.iceamusementpark.proxy;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
-public class SecretaryPrinciple implements Principal {
+public class SecretaryPrincipal implements Principal {
 
     private RealPrincipal realPrincipal;
     private String task;
@@ -11,7 +11,7 @@ public class SecretaryPrinciple implements Principal {
     /**
      * @param work 代理工作
      */
-    public SecretaryPrinciple(String work) {
+    public SecretaryPrincipal(String work) {
         this.task = work;
     }
 
@@ -27,7 +27,7 @@ public class SecretaryPrinciple implements Principal {
 
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "SecretaryPrinciple",
+                        "SecretaryPrincipal",
                         "performTask",
                         String.valueOf(System.identityHashCode(this)),
                         "执行任务"
