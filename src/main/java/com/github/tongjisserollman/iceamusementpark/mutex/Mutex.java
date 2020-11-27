@@ -25,18 +25,10 @@ public class Mutex implements Lock {
     }
 
     @Override
-    public void release() {
+    public synchronized void release() {
         if(Thread.currentThread() == owner){
             owner = null;
-            String msg = "洗手间内目前无人";
-            CallStackLogger.log(
-                    new CallStackLogInfo(
-                            "Mutex",
-                            "release",
-                            String.valueOf(System.identityHashCode(this)),
-                            msg
-                    )
-            );
+            notify();
         }
     }
 

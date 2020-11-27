@@ -3,30 +3,30 @@ package com.github.tongjisserollman.iceamusementpark.mutex;
 /**
  * @author aodethri
  *
- * 洗手间类
+ * 球的具体类
  */
-public class WashRoom {
+public class Ball {
 
     private final Lock lock;
 
-    private int beans;
+    private int num;
 
-    public WashRoom(int beans, Lock lock){
+    public Ball(int num, Lock lock){
         this.lock = lock;
-        this.beans = beans;
+        this.num = num;
     }
 
-    public boolean takeBean(){
+    public boolean takeBall(){
         boolean success = false;
         try {
             lock.acquire();
-            success = beans > 0;
+            success = num > 0;
             if(success){
-                beans -= 1;
+                num -= 1;
             }
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.release();
         }
         return success;

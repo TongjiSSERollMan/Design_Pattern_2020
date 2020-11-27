@@ -1,8 +1,5 @@
 package com.github.tongjisserollman.iceamusementpark.mutex;
 
-import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
-import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
-
 /**
  * @author aodethri
  *
@@ -16,27 +13,24 @@ public class Visitor extends Thread {
     private final String name;
 
     /**
-     * 洗手间对象
+     * 球的具体类
      */
-    private final WashRoom washRoom;
+    private final Ball ball;
 
-    public Visitor(String name, WashRoom washRoom){
+    public Visitor(String name, Ball ball){
         this.name = name;
-        this.washRoom = washRoom;
+        this.ball = ball;
     }
 
     @Override
     public void run() {
-        washRoom.takeBean();
-        String msg = name + "正在洗手间";
-        CallStackLogger.log(
-                new CallStackLogInfo(
-                        "Visitor",
-                        "run",
-                        String.valueOf(System.identityHashCode(this)),
-                        msg
-                )
-        );
-
+        int count = 0;
+        while(ball.takeBall()){
+            ++count;
+            String msg = name + "抢到了一个球";
+            System.out.println(msg);
+        }
+        String msg = name + "抢到了" + count + "个球";
+        System.out.println(msg);
     }
 }
