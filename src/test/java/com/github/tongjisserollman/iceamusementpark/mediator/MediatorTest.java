@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.mediator;
 
-class MediatorTest {
+public class MediatorTest {
     @org.junit.jupiter.api.Test
     void testMediator(){
         System.out.println("中介者模式测试：");

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class DecoratorTest {
 
     @Test
-    void displayTest(){
+    void testDecorator(){
         Facility f0 = new FacilityOriginal();
         f0.display();
         Facility f1 = new FacilityWall(f0);

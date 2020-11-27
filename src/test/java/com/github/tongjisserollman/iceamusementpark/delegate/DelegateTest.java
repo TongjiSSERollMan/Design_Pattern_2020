@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class DelegateTest {
 
     @Test
-    void ShowTest(){
+    void testDelegate(){
         ShowDelegate showDelegate = new ShowDelegate();
         showDelegate.startShow();
     }

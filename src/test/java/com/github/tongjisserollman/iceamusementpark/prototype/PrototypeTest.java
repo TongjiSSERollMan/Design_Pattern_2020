@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class PrototypeTest {
 
     @Test
-    void snackShopFactoryTest() {
+    void testPrototype() {
         var original = new Chair("公用椅");
 
         var staffChair = original.clone();

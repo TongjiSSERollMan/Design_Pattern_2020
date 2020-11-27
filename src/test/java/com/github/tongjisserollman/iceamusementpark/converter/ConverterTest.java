@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ConverterTest {
     @org.junit.jupiter.api.Test
-    void converterTest(){
+    void testConverter(){
         Employee person = new Employee(
                 "Kowalski",
                 "114514",

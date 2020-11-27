@@ -1,10 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.pipeline;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class StandardPipelineTest {
+public class PipelineTest {
     @org.junit.jupiter.api.Test
-    public void StandardPipelineTest() {
+    public void testPipeline() {
         String s = "test";
         StandardPipeline pipeline = new StandardPipeline();
         BasicValve basic = new BasicValve();

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class CommandTest {
 
     @Test
-    void snackShopFactoryTest() {
+    void testCommand() {
         Stock stock = new Stock("纪念品商店",10);
 
         StockBuy buyStockOrder = new StockBuy(stock);

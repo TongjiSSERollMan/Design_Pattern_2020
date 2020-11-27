@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class FactoryTest {
 
     @Test
-    void snackShopFactoryTest() {
+    void testFactory() {
         SnackShop snackShop = new SnackShop();
 
         Snack burger = snackShop.orderSnack("Burger");

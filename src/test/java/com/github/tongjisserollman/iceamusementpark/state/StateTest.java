@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class StateTest {
 
     @Test
-    void teacupTest(){
+    void testState(){
        Teacup teacup = new Teacup();
 
        StopState stopState = new StopState();

@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class MultipletonTest {
     @Test
-    void zonesTest() {
+    void testMultipleton() {
         String[] zonesName = {"movieZone", "amusementZone", "restaurantZone", "hotelZone"};
         for (int i = 0; i < zonesName.length; i++){
             ParkZones zone1 = ParkZones.getInstance(zonesName[i]);

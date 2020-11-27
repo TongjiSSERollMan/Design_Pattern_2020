@@ -1,15 +1,12 @@
 package com.github.tongjisserollman.iceamusementpark.marker;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 
 class MarkerTest {
     @org.junit.jupiter.api.Test
     void testMarker(){
         System.out.println("标记者模式测试：");
-        Customer customer = new Customer();
+        Visitor visitor = new Visitor("jjf");
         Worker worker = new Worker("喜羊羊",1);
         Officer officer = new Officer("包包大人");
         System.out.println("员工尝试进入员工通道：");
@@ -29,8 +26,8 @@ class MarkerTest {
         }
         System.out.println();
         System.out.println("游客尝试进入员工通道");
-        if(customer instanceof Premission){
-            customer.enterAccess();
+        if(visitor instanceof Premission){
+            visitor.enterAccess();
         }
         else {
             System.out.println("你没有权限进入员工通道");

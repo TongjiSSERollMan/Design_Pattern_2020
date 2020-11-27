@@ -8,7 +8,7 @@ import java.util.List;
  * 记账职员
  */
 public class Clerk {
-    private List<Order> orderList = new ArrayList<Order>();
+    private List<Order> orderList = new ArrayList<>();
     /**
      * 接收命令
      * @param order 命令

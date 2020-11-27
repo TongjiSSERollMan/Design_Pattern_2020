@@ -1,14 +1,16 @@
 package com.github.tongjisserollman.iceamusementpark.specification;
 
+import com.github.tongjisserollman.iceamusementpark.util.Gender;
+import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 import org.junit.jupiter.api.Test;
 
 public class SpecificationTest {
     @Test
-    void visitorSpecTest() {
+    void testSpecification() {
         Visitor[] visitors = {
-                new Visitor("lxd", 10, 168.5, Gender.FEMALE),
-                new Visitor("wzj", 20, 182, Gender.MALE),
-                new Visitor("zz", 90, 125, Gender.MALE)
+                new Visitor("lxd").setAge(10).setHeight(168.5).setGender(Gender.FEMALE),
+                new Visitor("wzj").setAge(20).setHeight(182).setGender(Gender.MALE),
+                new Visitor("zz").setAge(90).setHeight(125).setGender(Gender.FEMALE),
         };
 
         Specification<Visitor> spec1 = new VisitorGenderSpec(Gender.FEMALE).and(new VisitorAgeLessThanSpec(80));
