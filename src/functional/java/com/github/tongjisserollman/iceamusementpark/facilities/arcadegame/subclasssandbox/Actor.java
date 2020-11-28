@@ -13,7 +13,7 @@ public abstract class Actor {
     /**
      * 行动函数
      */
-    protected abstract void activate();
+    public abstract void activate();
 
     /**
      * 控制人物移动

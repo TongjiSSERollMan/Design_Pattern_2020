@@ -8,7 +8,7 @@ package com.github.tongjisserollman.iceamusementpark.facilities.arcadegame.subcl
 public class RollMan extends Actor {
 
     @Override
-    protected void activate() {
+    public void activate() {
         move(5.0, 5.0);
         cheer("My name is RollMan!");
         attack();
