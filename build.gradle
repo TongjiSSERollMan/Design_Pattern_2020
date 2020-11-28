@@ -27,6 +27,7 @@ run {
 [javadoc, compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 sourceSets.main.java.srcDirs += ['src/test/java']
+sourceSets.main.java.srcDirs += ['src/functional/java']
 
 test {
     useJUnitPlatform()
