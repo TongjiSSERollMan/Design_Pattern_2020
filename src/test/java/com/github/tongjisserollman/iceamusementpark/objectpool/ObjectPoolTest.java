@@ -49,7 +49,7 @@ class ObjectPoolTest {
     }
 
     @Test
-    public void ObjectPoolTest() {
+    public void testObjectPool() {
 
         ObjectPoolTest op = new ObjectPoolTest();
         op.setUp();
