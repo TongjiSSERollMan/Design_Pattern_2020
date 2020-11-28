@@ -15,6 +15,7 @@ public class StockSell implements Order {
      * 执行出库命令
      *
      */
+    @Override
     public void execute() {
         stock.sell();
     }

@@ -15,6 +15,7 @@ public class StockBuy implements Order {
      * 执行进货命令
      *
      */
+    @Override
     public void execute() {
         stock.buy();
     }
