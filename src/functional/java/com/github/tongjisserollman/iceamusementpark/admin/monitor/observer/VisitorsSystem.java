@@ -1,4 +1,4 @@
-package com.github.tongjisserollman.iceamusementpark.admin.facilityinfo.observer;
+package com.github.tongjisserollman.iceamusementpark.admin.monitor.observer;
 
 import java.util.ArrayList;
 import java.util.List;

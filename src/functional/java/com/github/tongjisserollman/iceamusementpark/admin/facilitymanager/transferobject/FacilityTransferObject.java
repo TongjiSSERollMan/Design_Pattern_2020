@@ -1,4 +1,4 @@
-package com.github.tongjisserollman.iceamusementpark.admin.employeeinfo.transferobject;
+package com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject;
 
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
@@ -6,27 +6,27 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 /**
  * @author Mrcopytuo
  *
- * 员工传输对象
+ * 设施传输对象
  */
 
-public class WorkerTransferObject {
+public class FacilityTransferObject {
     private String name;
     private String job;
     private int id;
 
     /**
-     * WorkerTransferObject构造器
+     * FacilityTransferObject构造器
      */
-    WorkerTransferObject(int id, String name, String job){
+    FacilityTransferObject(int id, String name, String job){
         this.name=name;
         this.job=job;
         this.id=id;
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
+                        "FacilityTransferObject",
                         String.valueOf(System.identityHashCode(this)),
-                        "WorkerTransferObject构造器"
+                        "FacilityTransferObject构造器"
                 )
         );
     }
@@ -37,7 +37,7 @@ public class WorkerTransferObject {
     public String getName(){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
                         "getName",
                         String.valueOf(System.identityHashCode(this)),
                         "姓名getter"
@@ -52,7 +52,7 @@ public class WorkerTransferObject {
     public int getId(){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
                         "getId",
                         String.valueOf(System.identityHashCode(this)),
                         "ID getter"
@@ -67,7 +67,7 @@ public class WorkerTransferObject {
     public String getJob(){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
                         "getJob",
                         String.valueOf(System.identityHashCode(this)),
                         "职业 getter"
@@ -82,7 +82,7 @@ public class WorkerTransferObject {
     public void setName(String name){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
                         "setName",
                         String.valueOf(System.identityHashCode(this)),
                         "姓名setter"
@@ -97,7 +97,7 @@ public class WorkerTransferObject {
     public void setId(int id){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
                         "setId",
                         String.valueOf(System.identityHashCode(this)),
                         "ID setter"
@@ -112,7 +112,7 @@ public class WorkerTransferObject {
     public void  setJob(String job){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "FacilityTransferObject",
                         "setJob",
                         String.valueOf(System.identityHashCode(this)),
                         "职业 setter"
