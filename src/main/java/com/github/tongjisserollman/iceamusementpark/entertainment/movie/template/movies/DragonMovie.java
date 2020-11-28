@@ -7,7 +7,7 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 /**
  * @author Moreonenight
  *
- * “水晶龙骨”电影g
+ * “水晶龙骨”电影
  */
 public class DragonMovie extends MovieTemplate {
     @Override
