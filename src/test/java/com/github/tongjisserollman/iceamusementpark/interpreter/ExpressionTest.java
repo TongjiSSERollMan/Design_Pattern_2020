@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.interpreter;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.calculator.interpreter.*;
 
 class ExpressionTest {
     @org.junit.jupiter.api.Test

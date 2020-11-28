@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.businessdelegate;
 
+import com.github.tongjisserollman.iceamusementpark.admin.directors.businessdelegate.Client;
+import com.github.tongjisserollman.iceamusementpark.admin.directors.businessdelegate.DirectorsDelegate;
 import org.junit.jupiter.api.Test;
 
 public class BusinessDelegateTest {

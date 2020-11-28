@@ -1,5 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.nullobject;
 
+import com.github.tongjisserollman.iceamusementpark.shows.actor.nullobject.AbstractActor;
+import com.github.tongjisserollman.iceamusementpark.shows.actor.nullobject.ActorFactory;
+
 public class NullObjectTest {
     @org.junit.jupiter.api.Test
     void testNullObject(){
@@ -9,7 +12,7 @@ public class NullObjectTest {
 
         AbstractActor[] actor = new AbstractActor[names.length];
         for (int i =0;i<names.length;i++){
-            actor[i]=ActorFactory.getActor(names[i]);
+            actor[i]= ActorFactory.getActor(names[i]);
         }
         for (AbstractActor abstractActor : actor) {
             System.out.println("现在给我们带来表演的是" + abstractActor.getName() + "！");

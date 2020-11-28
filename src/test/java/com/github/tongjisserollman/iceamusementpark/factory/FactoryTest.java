@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.factory;
 
+import com.github.tongjisserollman.iceamusementpark.commodities.fastfood.factory.Snack;
+import com.github.tongjisserollman.iceamusementpark.commodities.fastfood.factory.SnackShop;
 import org.junit.jupiter.api.Test;
 
 public class FactoryTest {

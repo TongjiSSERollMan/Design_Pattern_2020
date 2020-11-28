@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.lazyinitializationpattern;
 
+import com.github.tongjisserollman.iceamusementpark.commodities.toy.lazyinitializationpattern.Toy;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ToyTest {

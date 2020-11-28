@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.bridge;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.shows.balloon.bridge.*;
 
 class BridgeTest {
     @org.junit.jupiter.api.Test

@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.subclasssandbox;
 
+import com.github.tongjisserollman.iceamusementpark.facilities.arcadegame.subclasssandbox.RollMan;
+import com.github.tongjisserollman.iceamusementpark.facilities.arcadegame.subclasssandbox.UnrollMan;
 import org.junit.jupiter.api.Test;
 
 public class SubclassSandboxTest {

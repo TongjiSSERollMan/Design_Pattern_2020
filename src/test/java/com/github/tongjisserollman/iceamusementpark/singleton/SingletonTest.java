@@ -1,5 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.singleton;
 
+import com.github.tongjisserollman.iceamusementpark.base.amusementpark.singleton.AmusementPark;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
