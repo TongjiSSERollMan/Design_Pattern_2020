@@ -3,9 +3,11 @@ import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjectio
 import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.NewsPublisher;
 import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.NewspaperChannel;
 import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.OnlineNewsChannel;
+import org.junit.jupiter.api.Test;
 
 public class DependencyInjectionTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testDependencyInjection(){
         NewsPublisher publisher = new NewsPublisher();
         OnlineNewsChannel online = new OnlineNewsChannel();

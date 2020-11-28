@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.filter;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.facilityfilter.filter.*;
+import com.github.tongjisserollman.iceamusementpark.entertainment.facilityfilter.filter.*;
 
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
@@ -9,6 +9,7 @@ import java.util.List;
  * @author hq
  */
 public class FilterTest {
+
     @Test
     void testFilter() {
         List<Facility> facilities = new ArrayList<Facility>();

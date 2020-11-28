@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
  * @author hq
  */
 public class FlyWeightTest {
+
     @Test
     void testFlyWeight(){
         BGM bgm1 = (BGM) BGMFactory.getBGM("Mine");

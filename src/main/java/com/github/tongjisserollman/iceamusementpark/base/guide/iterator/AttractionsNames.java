@@ -5,8 +5,10 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
 public class AttractionsNames implements Attractions {
 
-    //推荐游览顺序数组
-    public String[] names = {"娱乐场大门", "冰雕", "购物中心", "娱乐场出口"};
+    /**
+     *  推荐游览顺序数组
+     */
+    private final String[] names = {"游乐区", "舞台区", "商业区", "办公区"};
 
 
     /**

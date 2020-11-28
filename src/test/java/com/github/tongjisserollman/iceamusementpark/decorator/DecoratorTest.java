@@ -1,9 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.decorator;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.wall.decorator.Facility;
-import com.github.tongjisserollman.iceamusementpark.facilities.wall.decorator.FacilityOriginal;
-import com.github.tongjisserollman.iceamusementpark.facilities.wall.decorator.FacilityTiming;
-import com.github.tongjisserollman.iceamusementpark.facilities.wall.decorator.FacilityWall;
+import com.github.tongjisserollman.iceamusementpark.entertainment.wall.decorator.Facility;
+import com.github.tongjisserollman.iceamusementpark.entertainment.wall.decorator.FacilityOriginal;
+import com.github.tongjisserollman.iceamusementpark.entertainment.wall.decorator.FacilityTiming;
+import com.github.tongjisserollman.iceamusementpark.entertainment.wall.decorator.FacilityWall;
 import org.junit.jupiter.api.Test;
 /**
  * @author hq

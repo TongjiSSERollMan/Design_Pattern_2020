@@ -1,9 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.command;
 
-import com.github.tongjisserollman.iceamusementpark.commodities.stock.command.Clerk;
-import com.github.tongjisserollman.iceamusementpark.commodities.stock.command.Stock;
-import com.github.tongjisserollman.iceamusementpark.commodities.stock.command.StockBuy;
-import com.github.tongjisserollman.iceamusementpark.commodities.stock.command.StockSell;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.stock.command.Clerk;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.stock.command.Stock;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.stock.command.StockBuy;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.stock.command.StockSell;
 import org.junit.jupiter.api.Test;
 
 public class CommandTest {

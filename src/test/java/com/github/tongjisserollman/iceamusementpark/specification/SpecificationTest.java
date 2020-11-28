@@ -1,14 +1,15 @@
 package com.github.tongjisserollman.iceamusementpark.specification;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.facilityagespecification.specification.Specification;
-import com.github.tongjisserollman.iceamusementpark.facilities.facilityagespecification.specification.VisitorAgeLessThanSpec;
-import com.github.tongjisserollman.iceamusementpark.facilities.facilityagespecification.specification.VisitorGenderSpec;
-import com.github.tongjisserollman.iceamusementpark.facilities.facilityagespecification.specification.VisitorHeightLessThanSpec;
+import com.github.tongjisserollman.iceamusementpark.entertainment.facilityagespecification.specification.Specification;
+import com.github.tongjisserollman.iceamusementpark.entertainment.facilityagespecification.specification.VisitorAgeLessThanSpec;
+import com.github.tongjisserollman.iceamusementpark.entertainment.facilityagespecification.specification.VisitorGenderSpec;
+import com.github.tongjisserollman.iceamusementpark.entertainment.facilityagespecification.specification.VisitorHeightLessThanSpec;
 import com.github.tongjisserollman.iceamusementpark.util.Gender;
 import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 import org.junit.jupiter.api.Test;
 
 public class SpecificationTest {
+
     @Test
     void testSpecification() {
         Visitor[] visitors = {

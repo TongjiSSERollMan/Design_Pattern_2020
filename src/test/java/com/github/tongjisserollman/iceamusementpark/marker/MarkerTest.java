@@ -1,12 +1,14 @@
 package com.github.tongjisserollman.iceamusementpark.marker;
 
-import com.github.tongjisserollman.iceamusementpark.admin.employeechannel.marker.Officer;
-import com.github.tongjisserollman.iceamusementpark.admin.employeechannel.marker.Premission;
-import com.github.tongjisserollman.iceamusementpark.admin.employeechannel.marker.Worker;
+import com.github.tongjisserollman.iceamusementpark.office.employeechannel.marker.Officer;
+import com.github.tongjisserollman.iceamusementpark.office.employeechannel.marker.Premission;
+import com.github.tongjisserollman.iceamusementpark.office.employeechannel.marker.Worker;
 import com.github.tongjisserollman.iceamusementpark.util.Visitor;
+import org.junit.jupiter.api.Test;
 
 class MarkerTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testMarker(){
         System.out.println("标记者模式测试：");
         Visitor visitor = new Visitor("jjf");

@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.util;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.skiing.strategy.SkiStrategy;
+import com.github.tongjisserollman.iceamusementpark.entertainment.skiing.strategy.SkiStrategy;
 
 /**
  * @author HR8398Cephei

@@ -1,10 +1,12 @@
 package com.github.tongjisserollman.iceamusementpark.extensionobject;
 
-import com.github.tongjisserollman.iceamusementpark.shows.opera.extensionobject.*;
+import com.github.tongjisserollman.iceamusementpark.stage.opera.extensionobject.*;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
+import org.junit.jupiter.api.Test;
 
 class ExtensionObjectTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testExtensionObject(){
         Role princeWarriorRole = new PrinceWarriorRole("小王");
         String warriorExtensionName = WarriorExtension.class.getName();
