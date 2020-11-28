@@ -1,6 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.dirtyflag;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.lounge.dirtyflag.Lounge;
+import com.github.tongjisserollman.iceamusementpark.base.lounge.dirtyflag.LoungeManager;
 
 class DirtyFlagTest {
     @org.junit.jupiter.api.Test

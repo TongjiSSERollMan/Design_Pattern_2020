@@ -1,5 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.adapter;
 
+import com.github.tongjisserollman.iceamusementpark.facilities.skating.adapter.Penguin;
+import com.github.tongjisserollman.iceamusementpark.facilities.skating.adapter.Skatable;
+import com.github.tongjisserollman.iceamusementpark.facilities.skating.adapter.SkatingShoeAdapter;
 import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 import org.junit.jupiter.api.Test;
 

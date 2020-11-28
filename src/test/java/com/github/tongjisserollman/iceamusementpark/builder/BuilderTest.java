@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.builder;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.commodities.smoothie.builder.*;
 
 class BuilderTest {
 

@@ -1,5 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.mutex;
 
+import com.github.tongjisserollman.iceamusementpark.facilities.ballgame.mutex.Ball;
+import com.github.tongjisserollman.iceamusementpark.facilities.ballgame.mutex.Mutex;
+import com.github.tongjisserollman.iceamusementpark.facilities.ballgame.mutex.Visitor;
 import org.junit.jupiter.api.Test;
 
 public class MutexTest {

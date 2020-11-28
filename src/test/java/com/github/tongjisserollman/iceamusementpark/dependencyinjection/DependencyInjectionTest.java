@@ -1,5 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.dependencyinjection;
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.News;
+import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.NewsPublisher;
+import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.NewspaperChannel;
+import com.github.tongjisserollman.iceamusementpark.base.news.dependencyinjection.OnlineNewsChannel;
+
 public class DependencyInjectionTest {
     @org.junit.jupiter.api.Test
     void testDependencyInjection(){

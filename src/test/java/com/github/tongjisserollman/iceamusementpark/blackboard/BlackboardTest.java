@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.blackboard;
 
+import com.github.tongjisserollman.iceamusementpark.base.noticeboard.blackboard.Blackboard;
+import com.github.tongjisserollman.iceamusementpark.base.noticeboard.blackboard.Control;
 import org.junit.jupiter.api.Test;
 
 /**
