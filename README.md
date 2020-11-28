@@ -2,8 +2,6 @@
 
 同济大学软件学院 2020-2021 学年 第 1 学期设计模式课程小组项目
 
-[English Version](https://github.com/TongjiSSERollMan/Design_Pattern_2020/blob/master/README-eng.md)
-
 ## 项目依赖
 
 Gradle 
