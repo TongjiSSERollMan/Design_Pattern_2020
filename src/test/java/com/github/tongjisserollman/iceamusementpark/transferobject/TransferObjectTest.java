@@ -1,31 +1,31 @@
 package com.github.tongjisserollman.iceamusementpark.transferobject;
 
-import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.FacilityBusinessObject;
-import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.FacilityTransferObject;
+import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.GoodsBusinessObject;
+import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.GoodsTransferObject;
 
 import java.util.Map;
 
 class TransferObjectTest {
     @org.junit.jupiter.api.Test
-    void testTransferObject(){
+    void testTransferObject() {
         System.out.println("传输对象模式测试：");
-        FacilityBusinessObject facilityBusinessObject = new FacilityBusinessObject();
-        FacilityTransferObject facility1 = new FacilityTransferObject(1,"琉星","商店店员");
-        FacilityTransferObject facility2 = new FacilityTransferObject(10,"十月","玩偶演员");
-        FacilityTransferObject facility3 = new FacilityTransferObject(13,"贪狼","商店店长");
-        facilityBusinessObject.addFacility(facility1);
-        facilityBusinessObject.addFacility(facility2);
-        facilityBusinessObject.addFacility(facility3);
+        GoodsBusinessObject GoodBusinessObject = new GoodsBusinessObject();
+        GoodsTransferObject good1 = new GoodsTransferObject(1, "魔法棒", 1);
+        GoodsTransferObject good2 = new GoodsTransferObject(10, "帽子", 2);
+        GoodsTransferObject good3 = new GoodsTransferObject(13, "钥匙扣", 3);
+        GoodBusinessObject.addWorker(good1);
+        GoodBusinessObject.addWorker(good2);
+        GoodBusinessObject.addWorker(good3);
 
-        for (Map.Entry<Integer, FacilityTransferObject> entry : facilityBusinessObject.getAllFacilitys().entrySet()){
-            System.out.println("姓名："+entry.getValue().getName()+" id:"+entry.getKey());
+        for (Map.Entry<Integer, GoodsTransferObject> entry : GoodBusinessObject.getAllWorkers().entrySet()) {
+            System.out.println("货物名：" + entry.getValue().getName() + " id:" + entry.getKey());
         }
 
-        FacilityTransferObject facility = new FacilityTransferObject(13,"潇洒哥", "清洁工");
-        facilityBusinessObject.updateFacility(facility);
+        GoodsTransferObject good = new GoodsTransferObject(13, "外套", 4);
+        GoodBusinessObject.updateWorker(good);
 
-        FacilityTransferObject getFacility = facilityBusinessObject.getFacility(13);
-        System.out.println("查看单个员工：");
-        System.out.println("姓名："+getFacility.getName()+" id："+getFacility.getId());
+        GoodsTransferObject getWorker = GoodBusinessObject.getWorker(13);
+        System.out.println("查看单个货物：");
+        System.out.println("货物名：" + getWorker.getName() + " id：" + getWorker.getId());
     }
 }
