@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.dataaccessobject;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.admin.employeeinfo.dataaccessobject.EmployeeDaoImpl;
 
 class DataAccessObjectTest {
     @org.junit.jupiter.api.Test

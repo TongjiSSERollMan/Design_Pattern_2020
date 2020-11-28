@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.memento;
 
+import com.github.tongjisserollman.iceamusementpark.facilities.dart.memento.RecordList;
+import com.github.tongjisserollman.iceamusementpark.facilities.dart.memento.ScoreOriginator;
 import org.junit.jupiter.api.Test;
 
 public class MementoTest {

@@ -1,5 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.observer;
 
+import com.github.tongjisserollman.iceamusementpark.admin.facilityinfo.observer.Office;
+import com.github.tongjisserollman.iceamusementpark.admin.facilityinfo.observer.ParkScreen;
+import com.github.tongjisserollman.iceamusementpark.admin.facilityinfo.observer.Turnstile;
+import com.github.tongjisserollman.iceamusementpark.admin.facilityinfo.observer.VisitorsSystem;
 import org.junit.jupiter.api.Test;
 
 

@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.frontcontroller;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.website.frontcontroller.FrontController;
 
 class FrontControllerTest {
     @org.junit.jupiter.api.Test

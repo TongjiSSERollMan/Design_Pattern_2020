@@ -1,5 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.multipleton;
 
+import com.github.tongjisserollman.iceamusementpark.base.parkzones.multipleton.ParkZones;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

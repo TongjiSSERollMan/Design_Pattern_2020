@@ -1,8 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.transferobject;
 
-import java.util.Map;
+import com.github.tongjisserollman.iceamusementpark.admin.employeeinfo.transferobject.WorkerBusinessObject;
+import com.github.tongjisserollman.iceamusementpark.admin.employeeinfo.transferobject.WorkerTransferObject;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Map;
 
 class TransferObjectTest {
     @org.junit.jupiter.api.Test

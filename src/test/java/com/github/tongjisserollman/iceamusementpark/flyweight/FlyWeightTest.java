@@ -1,5 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.flyweight;
 
+import com.github.tongjisserollman.iceamusementpark.base.bgm.flyweight.BGM;
+import com.github.tongjisserollman.iceamusementpark.base.bgm.flyweight.BGMFactory;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -8,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class FlyWeightTest {
     @Test
     void testFlyWeight(){
-        BGM bgm1 = (BGM)BGMFactory.getBGM("Mine");
+        BGM bgm1 = (BGM) BGMFactory.getBGM("Mine");
         bgm1.setPlace("门口");
         bgm1.show();
         BGM bgm2 = (BGM)BGMFactory.getBGM("Red");

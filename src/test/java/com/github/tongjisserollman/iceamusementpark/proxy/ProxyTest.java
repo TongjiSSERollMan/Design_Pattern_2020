@@ -1,5 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.proxy;
 
+import com.github.tongjisserollman.iceamusementpark.admin.principal.proxy.Principal;
+import com.github.tongjisserollman.iceamusementpark.admin.principal.proxy.RealPrincipal;
+import com.github.tongjisserollman.iceamusementpark.admin.principal.proxy.SecretaryPrincipal;
+
 class ProxyTest {
 
     @org.junit.jupiter.api.Test

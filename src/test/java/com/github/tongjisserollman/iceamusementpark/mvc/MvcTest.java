@@ -1,5 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.mvc;
 
+import com.github.tongjisserollman.iceamusementpark.facilities.carousel.mvc.Carousel;
+import com.github.tongjisserollman.iceamusementpark.facilities.carousel.mvc.CarouselController;
+import com.github.tongjisserollman.iceamusementpark.facilities.carousel.mvc.CarouselView;
+
 public class MvcTest {
     @org.junit.jupiter.api.Test
     void testMvc(){

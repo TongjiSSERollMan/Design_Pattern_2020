@@ -1,6 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.iterator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.guide.iterator.AttractionsNames;
+import com.github.tongjisserollman.iceamusementpark.base.guide.iterator.Guide;
 
 class IteratorTest {
 

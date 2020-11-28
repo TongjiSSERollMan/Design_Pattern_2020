@@ -1,8 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.servant;
 
-import java.sql.PseudoColumnUsage;
-
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.rose.servant.MoveServant;
+import com.github.tongjisserollman.iceamusementpark.base.rose.servant.Position;
+import com.github.tongjisserollman.iceamusementpark.base.rose.servant.Rose;
 
 class ServantTest {
     @org.junit.jupiter.api.Test
