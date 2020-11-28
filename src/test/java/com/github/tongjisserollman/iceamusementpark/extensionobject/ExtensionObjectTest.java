@@ -29,7 +29,6 @@ class ExtensionObjectTest {
                     "没有找到王子插件"
             );
         }
-        System.out.println(PrinceExtension.class.getName());
         princeWarriorRole.addExtension(PrinceExtension.class.getName());
         extension =  princeWarriorRole.getExtension(PrinceExtension.class.getName());
         if (extension != null) {

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class BlackboardTest {
 
     @Test
-    public void blackboardTest(){
+    public void testBlackboard(){
         Blackboard blackboard = new Blackboard();
         Control control = new Control(blackboard);
         control.addSource("今日门票优惠:八折");

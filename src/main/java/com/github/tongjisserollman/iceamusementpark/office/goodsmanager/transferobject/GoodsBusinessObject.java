@@ -1,4 +1,4 @@
-package com.github.tongjisserollman.iceamusementpark.office.facilitymanager.transferobject;
+package com.github.tongjisserollman.iceamusementpark.office.goodsmanager.transferobject;
 
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
@@ -13,7 +13,6 @@ import java.util.Map;
  */
 
 public class GoodsBusinessObject {
-    //private List<GoodsTransferObject> goods;
     private Map<Integer,GoodsTransferObject> goodMap;
 
     /**
@@ -34,12 +33,12 @@ public class GoodsBusinessObject {
     /**
      * 添加货物
      */
-    public void addWorker(GoodsTransferObject good){
+    public void addGood(GoodsTransferObject good){
         goodMap.put(good.getId(),good);
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "GoodBusinessObject",
-                        "addWorker",
+                        "addGood",
                         String.valueOf(System.identityHashCode(this)),
                         "添加货物"
                 )
@@ -49,12 +48,12 @@ public class GoodsBusinessObject {
     /**
      * 移除货物
      */
-    public void deleteWorker(GoodsTransferObject good){
+    public void deleteGood(GoodsTransferObject good){
         goodMap.remove(good.getId());
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "GoodBusinessObject",
-                        "deleteWorker",
+                        "deleteGood",
                         String.valueOf(System.identityHashCode(this)),
                         "移除货物"
                 )
@@ -65,11 +64,11 @@ public class GoodsBusinessObject {
     /**
      * 获取货物表
      */
-    public Map<Integer,GoodsTransferObject> getAllWorkers(){
+    public Map<Integer,GoodsTransferObject> getAllGoods(){
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "GoodBusinessObject",
-                        "getAllWorkers",
+                        "getAllGoods",
                         String.valueOf(System.identityHashCode(this)),
                         "获取货物表"
                 )
@@ -80,11 +79,11 @@ public class GoodsBusinessObject {
     /**
      * 获取货物信息
      */
-    public GoodsTransferObject getWorker(int id){
+    public GoodsTransferObject getGood(int id){
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "GoodBusinessObject",
-                        "getWorkers",
+                        "getGoods",
                         String.valueOf(System.identityHashCode(this)),
                         "获取货物信息"
                 )
@@ -95,11 +94,11 @@ public class GoodsBusinessObject {
     /**
      * 更新货物数据
      */
-    public void updateWorker(GoodsTransferObject good){
+    public void updateGood(GoodsTransferObject good){
         CallStackLogger.log(
                 new CallStackLogInfo(
                         "GoodBusinessObject",
-                        "getWorkers",
+                        "getGoods",
                         String.valueOf(System.identityHashCode(this)),
                         "更新货物数据"
                 )
