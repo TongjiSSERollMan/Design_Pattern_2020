@@ -1,11 +1,11 @@
-package com.github.tongjisserollman.iceamusementpark.office.facilitymanager.transferobject;
+package com.github.tongjisserollman.iceamusementpark.office.goodsmanager.transferobject;
 
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
 /**
  * @author Mrcopytuo
- * <p>
+ *
  * 设施传输对象
  */
 
