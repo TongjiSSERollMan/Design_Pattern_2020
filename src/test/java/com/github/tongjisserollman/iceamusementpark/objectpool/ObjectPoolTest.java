@@ -50,7 +50,6 @@ class ObjectPoolTest {
 
     @Test
     public void testObjectPool() {
-
         ObjectPoolTest op = new ObjectPoolTest();
         op.setUp();
         op.tearDown();
