@@ -12,7 +12,7 @@ public class PrinceWarriorRole extends Role {
      *
      * @param name 角色名
      */
-    PrinceWarriorRole(String name) {
+    public PrinceWarriorRole(String name) {
         super(name);
         CallStackLogger.log(new CallStackLogInfo(
                 "PrinceWarriorRole",

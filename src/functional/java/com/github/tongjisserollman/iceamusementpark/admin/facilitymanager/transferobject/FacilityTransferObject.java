@@ -17,7 +17,7 @@ public class FacilityTransferObject {
     /**
      * FacilityTransferObject构造器
      */
-    FacilityTransferObject(int id, String name, String job){
+    public FacilityTransferObject(int id, String name, String job){
         this.name=name;
         this.job=job;
         this.id=id;
