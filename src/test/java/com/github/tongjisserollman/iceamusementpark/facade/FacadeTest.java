@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.facade;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.github.tongjisserollman.iceamusementpark.base.securitysystem.facade.SecuritySystem;
 
 class FacadeTest {
     @org.junit.jupiter.api.Test

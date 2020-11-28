@@ -1,5 +1,8 @@
 package com.github.tongjisserollman.iceamusementpark.marker;
 
+import com.github.tongjisserollman.iceamusementpark.admin.employeechannel.marker.Officer;
+import com.github.tongjisserollman.iceamusementpark.admin.employeechannel.marker.Premission;
+import com.github.tongjisserollman.iceamusementpark.admin.employeechannel.marker.Worker;
 import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 
 class MarkerTest {

@@ -1,5 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.prototype;
 
+import com.github.tongjisserollman.iceamusementpark.base.chair.prototype.Chair;
 import org.junit.jupiter.api.Test;
 
 public class PrototypeTest {

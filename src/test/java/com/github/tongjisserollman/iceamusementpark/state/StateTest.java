@@ -1,5 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.state;
 
+import com.github.tongjisserollman.iceamusementpark.facilities.teacup.state.ClockwiseState;
+import com.github.tongjisserollman.iceamusementpark.facilities.teacup.state.CounterclockwiseState;
+import com.github.tongjisserollman.iceamusementpark.facilities.teacup.state.StopState;
+import com.github.tongjisserollman.iceamusementpark.facilities.teacup.state.Teacup;
 import org.junit.jupiter.api.Test;
 
 public class StateTest {
