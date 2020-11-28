@@ -23,7 +23,7 @@ public abstract class MovieTemplate {
         );
     }
     /**
-     * 检票，允许游客进入电影
+     * 检票，允许游客进入影院
      */
     public void checkIn(){
         CallStackLogger.log(
@@ -66,7 +66,7 @@ public abstract class MovieTemplate {
         );
     }
     /**
-     * 游客散场，进行散场后的清理和检查
+     * 观众散场，进行散场后的清理和检查
      */
     public void cleanUp(){
         CallStackLogger.log(

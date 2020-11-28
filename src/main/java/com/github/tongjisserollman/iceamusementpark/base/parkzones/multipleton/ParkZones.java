@@ -8,14 +8,14 @@ import java.util.NoSuchElementException;
 /**
  * @author Moreonenight
  *
- * 游乐场的分区（影视区、游乐区、餐馆区、旅馆区）
+ * 游乐场的分区（舞台区、游乐区、商业区、办公区）
  */
 public enum ParkZones {
     // 用枚举类型实现多例模式（单例的集合）
-    MOVIE_ZONE, AMUSEMENT_ZONE, RESTAURANT_ZONE, HOTEL_ZONE;
+    STAGE_ZONE, AMUSEMENT_ZONE, BUSINESS_ZONE, ADMIN_ZONE;
     /**
      * 获取冰雪游乐场特定分区的单例
-     * @param zoneName 需要获取的分区的名称，可以是"movieZone", "amusementZone", "restaurantZone" 或 "hotelZone"
+     * @param zoneName 需要获取的分区的名称，可以是"stageZone", "amusementZone", "businessZone" 或 "adminZone"
      * @return 获取到的分区的单例
      */
     public static ParkZones getInstance(String zoneName){
@@ -23,15 +23,15 @@ public enum ParkZones {
                 new CallStackLogInfo(
                         "ParkZones",
                         "getInstance",
-                        String.valueOf(System.identityHashCode(MOVIE_ZONE)),
+                        "ParkZones.ENUMs",
                         "获取冰雪游乐场特定分区的单例"
                 )
         );
         return switch (zoneName) {
-            case "movieZone" -> MOVIE_ZONE;
+            case "stageZone" -> STAGE_ZONE;
             case "amusementZone" -> AMUSEMENT_ZONE;
-            case "restaurantZone" -> RESTAURANT_ZONE;
-            case "hotelZone" -> HOTEL_ZONE;
+            case "businessZone" -> BUSINESS_ZONE;
+            case "adminZone" -> ADMIN_ZONE;
             default -> throw new NoSuchElementException("Requested Zone doesn't Exist.");
         };
     }
