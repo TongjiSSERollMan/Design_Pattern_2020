@@ -3,6 +3,7 @@ package com.github.tongjisserollman.iceamusementpark.objectpool;
 import com.github.tongjisserollman.iceamusementpark.base.bus.objectpool.BusPool;
 import com.github.tongjisserollman.iceamusementpark.base.bus.objectpool.ExportingProcess;
 import com.github.tongjisserollman.iceamusementpark.base.bus.objectpool.ExportingTask;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -16,6 +17,7 @@ class ObjectPoolTest {
 
     public void setUp() {
         pool = new BusPool<ExportingProcess>(4, 10, 5) {
+            @Override
             protected ExportingProcess createObject() {
                 return new ExportingProcess(processNo.incrementAndGet());
             }
@@ -46,9 +48,8 @@ class ObjectPoolTest {
         }
     }
 
-
-    @org.junit.jupiter.api.Test
-    public void BusPoolTest() {
+    @Test
+    public void ObjectPoolTest() {
 
         ObjectPoolTest op = new ObjectPoolTest();
         op.setUp();

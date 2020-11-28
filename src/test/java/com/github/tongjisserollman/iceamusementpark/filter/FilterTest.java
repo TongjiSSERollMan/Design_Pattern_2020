@@ -9,6 +9,7 @@ import java.util.List;
  * @author hq
  */
 public class FilterTest {
+
     @Test
     void testFilter() {
         List<Facility> facilities = new ArrayList<Facility>();

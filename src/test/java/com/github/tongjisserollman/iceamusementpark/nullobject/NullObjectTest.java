@@ -2,9 +2,11 @@ package com.github.tongjisserollman.iceamusementpark.nullobject;
 
 import com.github.tongjisserollman.iceamusementpark.shows.actor.nullobject.AbstractActor;
 import com.github.tongjisserollman.iceamusementpark.shows.actor.nullobject.ActorFactory;
+import org.junit.jupiter.api.Test;
 
 public class NullObjectTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testNullObject(){
         System.out.println("空对象模式测试：");
 

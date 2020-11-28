@@ -2,10 +2,11 @@ package com.github.tongjisserollman.iceamusementpark.iterator;
 
 import com.github.tongjisserollman.iceamusementpark.base.guide.iterator.AttractionsNames;
 import com.github.tongjisserollman.iceamusementpark.base.guide.iterator.Guide;
+import org.junit.jupiter.api.Test;
 
 class IteratorTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     public void testIterator() {
         AttractionsNames attractionsNames = new AttractionsNames();
         for (Guide guide = attractionsNames.getGuidance(); guide.hasNext(); ) {

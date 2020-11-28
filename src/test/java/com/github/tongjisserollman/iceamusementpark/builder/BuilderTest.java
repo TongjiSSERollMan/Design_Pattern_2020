@@ -1,10 +1,11 @@
 package com.github.tongjisserollman.iceamusementpark.builder;
 
 import com.github.tongjisserollman.iceamusementpark.commodities.smoothie.builder.*;
+import org.junit.jupiter.api.Test;
 
 class BuilderTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testBuilder() {
         SmoothieDirector smoothieDirector = new SmoothieDirector();
 

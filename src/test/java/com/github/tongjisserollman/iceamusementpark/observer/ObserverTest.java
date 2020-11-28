@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 
 public class ObserverTest {
+
     @Test
     void testObserver() {
         Turnstile turnstile1 = new Turnstile();

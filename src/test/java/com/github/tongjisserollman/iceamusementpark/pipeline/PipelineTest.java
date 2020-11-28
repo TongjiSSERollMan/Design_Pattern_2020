@@ -4,9 +4,10 @@ import com.github.tongjisserollman.iceamusementpark.base.pipe.pipeline.BasicValv
 import com.github.tongjisserollman.iceamusementpark.base.pipe.pipeline.SecondValve;
 import com.github.tongjisserollman.iceamusementpark.base.pipe.pipeline.StandardPipeline;
 import com.github.tongjisserollman.iceamusementpark.base.pipe.pipeline.ThirdValve;
+import org.junit.jupiter.api.Test;
 
 public class PipelineTest {
-    @org.junit.jupiter.api.Test
+    @Test
     public void testPipeline() {
         String s = "test";
         StandardPipeline pipeline = new StandardPipeline();

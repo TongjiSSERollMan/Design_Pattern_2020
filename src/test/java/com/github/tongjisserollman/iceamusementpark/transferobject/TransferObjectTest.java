@@ -2,11 +2,13 @@ package com.github.tongjisserollman.iceamusementpark.transferobject;
 
 import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.GoodsBusinessObject;
 import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.GoodsTransferObject;
+import org.junit.jupiter.api.Test;
 
 import java.util.Map;
 
 class TransferObjectTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testTransferObject() {
         System.out.println("传输对象模式测试：");
         GoodsBusinessObject GoodBusinessObject = new GoodsBusinessObject();

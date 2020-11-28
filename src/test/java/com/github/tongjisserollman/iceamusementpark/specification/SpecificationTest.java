@@ -9,6 +9,7 @@ import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 import org.junit.jupiter.api.Test;
 
 public class SpecificationTest {
+
     @Test
     void testSpecification() {
         Visitor[] visitors = {

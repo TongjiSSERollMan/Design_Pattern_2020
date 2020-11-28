@@ -1,12 +1,14 @@
-package com.github.tongjisserollman.iceamusementpark.lazyinitializationpattern;
+package com.github.tongjisserollman.iceamusementpark.lazyinitialization;
 
 import com.github.tongjisserollman.iceamusementpark.commodities.toy.lazyinitializationpattern.Toy;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ToyTest {
-    @org.junit.jupiter.api.Test
-    void toyTest(){
+class LazyInitializationTest {
+
+    @Test
+    void testLazyInitialization() {
         assert(Toy.types.get("car") == null);
         Toy toy1 = Toy.getToy("car");
         assert(Toy.types.get("car") != null);

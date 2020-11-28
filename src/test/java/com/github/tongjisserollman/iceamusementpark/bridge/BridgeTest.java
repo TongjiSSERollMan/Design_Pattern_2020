@@ -1,9 +1,11 @@
 package com.github.tongjisserollman.iceamusementpark.bridge;
 
 import com.github.tongjisserollman.iceamusementpark.shows.balloon.bridge.*;
+import org.junit.jupiter.api.Test;
 
 class BridgeTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testBridge(){
         System.out.println("桥接模式测试：");
         Shape dogRedBalloon = new DogShape(new RedBalloon());

@@ -8,9 +8,10 @@ import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstr
 import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.b.SnowCarvingSectorTypeB;
 import org.junit.jupiter.api.Test;
 
-public class FactoryTest {
+public class AbstractFactoryTest {
+
     @Test
-    void testFactory() {
+    void testAbstractFactory() {
         SnowCarvingSectorTypeA sector1 = new SnowCarvingSectorTypeA();
         SnowCarvingSectorTypeB sector2 = new SnowCarvingSectorTypeB();
         CarvedPeopleA carved1 = sector1.createCarvedPeople("小明");

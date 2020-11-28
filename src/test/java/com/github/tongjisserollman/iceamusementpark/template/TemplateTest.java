@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TemplateTest{
+
     @Test
     void testTemplate() {
         MovieTemplate dragonMovie = new DragonMovie();

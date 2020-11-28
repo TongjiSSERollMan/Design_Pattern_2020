@@ -2,9 +2,11 @@ package com.github.tongjisserollman.iceamusementpark.dirtyflag;
 
 import com.github.tongjisserollman.iceamusementpark.base.lounge.dirtyflag.Lounge;
 import com.github.tongjisserollman.iceamusementpark.base.lounge.dirtyflag.LoungeManager;
+import org.junit.jupiter.api.Test;
 
 class DirtyFlagTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testDirtyFlag(){
         System.out.println("脏标记模式测试：");
         Lounge lounge = new Lounge();

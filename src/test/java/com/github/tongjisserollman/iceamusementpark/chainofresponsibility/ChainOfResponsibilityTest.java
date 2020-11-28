@@ -4,6 +4,7 @@ import com.github.tongjisserollman.iceamusementpark.facilities.hauntedhouse.chai
 import org.junit.jupiter.api.Test;
 
 public class ChainOfResponsibilityTest {
+
     @Test
     void testChainOfResponsibility() {
         ChainOfResponsibility.play();

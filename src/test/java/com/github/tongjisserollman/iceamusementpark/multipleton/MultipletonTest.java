@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MultipletonTest {
+
     @Test
     void testMultipleton() {
         String[] zonesName = {"movieZone", "amusementZone", "restaurantZone", "hotelZone"};

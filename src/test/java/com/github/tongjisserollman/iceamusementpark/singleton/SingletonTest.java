@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SingletonTest {
+
     @Test
     void testSingleton() {
         AmusementPark park1 = AmusementPark.getInstance();

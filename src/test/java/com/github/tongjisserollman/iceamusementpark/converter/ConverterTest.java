@@ -3,11 +3,13 @@ package com.github.tongjisserollman.iceamusementpark.converter;
 import com.github.tongjisserollman.iceamusementpark.admin.employeecard.converter.Converter;
 import com.github.tongjisserollman.iceamusementpark.admin.employeecard.converter.Employee;
 import com.github.tongjisserollman.iceamusementpark.admin.employeecard.converter.EmployeeIdCard;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ConverterTest {
-    @org.junit.jupiter.api.Test
+
+    @Test
     void testConverter(){
         Employee person = new Employee(
                 "Kowalski",

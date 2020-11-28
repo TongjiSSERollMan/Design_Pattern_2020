@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class MutexTest {
 
     @Test
-    public void mutexTest(){
+    public void testMutex(){
         Mutex mutex = new Mutex();
         Ball ball = new Ball(20, mutex);
         Visitor visitor1 = new Visitor("Jhon", ball);
