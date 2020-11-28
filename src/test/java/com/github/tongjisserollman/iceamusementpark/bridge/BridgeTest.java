@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.bridge;
 
-import com.github.tongjisserollman.iceamusementpark.shows.balloon.bridge.*;
+import com.github.tongjisserollman.iceamusementpark.stage.balloon.bridge.*;
 import org.junit.jupiter.api.Test;
 
 class BridgeTest {

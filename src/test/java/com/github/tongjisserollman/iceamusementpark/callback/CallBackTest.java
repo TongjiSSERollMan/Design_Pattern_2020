@@ -1,7 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.callback;
 
-import com.github.tongjisserollman.iceamusementpark.commodities.hotel.callback.ResultExporter;
-import com.github.tongjisserollman.iceamusementpark.commodities.hotel.callback.TouristThread;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.hotel.callback.ResultExporter;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.hotel.callback.TouristThread;
 import org.junit.jupiter.api.Test;
 
 public class CallBackTest {

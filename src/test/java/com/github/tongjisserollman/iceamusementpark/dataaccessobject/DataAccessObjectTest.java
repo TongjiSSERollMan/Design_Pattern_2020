@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.dataaccessobject;
 
-import com.github.tongjisserollman.iceamusementpark.admin.employeeinfo.dataaccessobject.EmployeeDaoImpl;
+import com.github.tongjisserollman.iceamusementpark.office.employeeinfo.dataaccessobject.EmployeeDaoImpl;
 import org.junit.jupiter.api.Test;
 
 class DataAccessObjectTest {

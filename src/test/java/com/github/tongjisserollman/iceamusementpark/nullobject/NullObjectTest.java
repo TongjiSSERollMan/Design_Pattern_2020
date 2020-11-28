@@ -1,7 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.nullobject;
 
-import com.github.tongjisserollman.iceamusementpark.shows.actor.nullobject.AbstractActor;
-import com.github.tongjisserollman.iceamusementpark.shows.actor.nullobject.ActorFactory;
+import com.github.tongjisserollman.iceamusementpark.stage.actor.nullobject.AbstractActor;
+import com.github.tongjisserollman.iceamusementpark.stage.actor.nullobject.ActorFactory;
 import org.junit.jupiter.api.Test;
 
 public class NullObjectTest {

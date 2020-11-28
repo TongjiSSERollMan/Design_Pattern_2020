@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.extensionobject;
 
-import com.github.tongjisserollman.iceamusementpark.shows.opera.extensionobject.*;
+import com.github.tongjisserollman.iceamusementpark.stage.opera.extensionobject.*;
 import com.github.tongjisserollman.iceamusementpark.util.CallStackLogInfo;
 import org.junit.jupiter.api.Test;
 

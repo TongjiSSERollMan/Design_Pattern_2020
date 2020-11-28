@@ -1,7 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.transferobject;
 
-import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.GoodsBusinessObject;
-import com.github.tongjisserollman.iceamusementpark.admin.facilitymanager.transferobject.GoodsTransferObject;
+import com.github.tongjisserollman.iceamusementpark.office.facilitymanager.transferobject.GoodsBusinessObject;
+import com.github.tongjisserollman.iceamusementpark.office.facilitymanager.transferobject.GoodsTransferObject;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;

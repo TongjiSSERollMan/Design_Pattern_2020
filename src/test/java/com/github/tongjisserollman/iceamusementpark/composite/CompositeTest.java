@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.composite;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.icesculpture.composite.IceSculpture;
+import com.github.tongjisserollman.iceamusementpark.entertainment.icesculpture.composite.IceSculpture;
 import org.junit.jupiter.api.Test;
 
 public class CompositeTest {

@@ -1,9 +1,9 @@
 package com.github.tongjisserollman.iceamusementpark.mediator;
 
-import com.github.tongjisserollman.iceamusementpark.commodities.shop.mediator.GoodsMediator;
-import com.github.tongjisserollman.iceamusementpark.commodities.shop.mediator.HatShop;
-import com.github.tongjisserollman.iceamusementpark.commodities.shop.mediator.IcecreamShop;
-import com.github.tongjisserollman.iceamusementpark.commodities.shop.mediator.MaskShop;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.shop.mediator.GoodsMediator;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.shop.mediator.HatShop;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.shop.mediator.IcecreamShop;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.shop.mediator.MaskShop;
 import org.junit.jupiter.api.Test;
 
 public class MediatorTest {

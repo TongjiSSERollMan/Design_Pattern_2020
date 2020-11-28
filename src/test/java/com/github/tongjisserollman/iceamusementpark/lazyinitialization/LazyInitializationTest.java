@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.lazyinitialization;
 
-import com.github.tongjisserollman.iceamusementpark.commodities.toy.lazyinitializationpattern.Toy;
+import com.github.tongjisserollman.iceamusementpark.shoppingmall.toy.lazyinitializationpattern.Toy;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

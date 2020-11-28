@@ -1,7 +1,7 @@
 package com.github.tongjisserollman.iceamusementpark.strategy;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.skiing.strategy.DoublePlateSki;
-import com.github.tongjisserollman.iceamusementpark.facilities.skiing.strategy.SinglePlateSki;
+import com.github.tongjisserollman.iceamusementpark.entertainment.skiing.strategy.DoublePlateSki;
+import com.github.tongjisserollman.iceamusementpark.entertainment.skiing.strategy.SinglePlateSki;
 import com.github.tongjisserollman.iceamusementpark.util.Visitor;
 import org.junit.jupiter.api.Test;
 

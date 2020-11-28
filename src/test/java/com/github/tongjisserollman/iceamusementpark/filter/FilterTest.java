@@ -1,6 +1,6 @@
 package com.github.tongjisserollman.iceamusementpark.filter;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.facilityfilter.filter.*;
+import com.github.tongjisserollman.iceamusementpark.entertainment.facilityfilter.filter.*;
 
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;

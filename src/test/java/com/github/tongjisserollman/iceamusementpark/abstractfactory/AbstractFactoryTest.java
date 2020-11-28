@@ -1,11 +1,11 @@
 package com.github.tongjisserollman.iceamusementpark.abstractfactory;
 
-import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.a.CarvedPeopleA;
-import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.a.CarvedThingsA;
-import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.a.SnowCarvingSectorTypeA;
-import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.b.CarvedPeopleB;
-import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.b.CarvedThingsB;
-import com.github.tongjisserollman.iceamusementpark.facilities.snowcarving.abstractfactory.sector.b.SnowCarvingSectorTypeB;
+import com.github.tongjisserollman.iceamusementpark.entertainment.snowcarving.abstractfactory.sector.a.CarvedPeopleA;
+import com.github.tongjisserollman.iceamusementpark.entertainment.snowcarving.abstractfactory.sector.a.CarvedThingsA;
+import com.github.tongjisserollman.iceamusementpark.entertainment.snowcarving.abstractfactory.sector.a.SnowCarvingSectorTypeA;
+import com.github.tongjisserollman.iceamusementpark.entertainment.snowcarving.abstractfactory.sector.b.CarvedPeopleB;
+import com.github.tongjisserollman.iceamusementpark.entertainment.snowcarving.abstractfactory.sector.b.CarvedThingsB;
+import com.github.tongjisserollman.iceamusementpark.entertainment.snowcarving.abstractfactory.sector.b.SnowCarvingSectorTypeB;
 import org.junit.jupiter.api.Test;
 
 public class AbstractFactoryTest {
