@@ -7,11 +7,11 @@ class MarkerTest {
     void testMarker(){
         System.out.println("标记者模式测试：");
         Visitor visitor = new Visitor("jjf");
-        Worker worker = new Worker("喜羊羊",1);
+        Worker good = new Worker("喜羊羊",1);
         Officer officer = new Officer("包包大人");
         System.out.println("员工尝试进入员工通道：");
-        if(worker instanceof Premission){
-            worker.enterAccess();
+        if(good instanceof Premission){
+            good.enterAccess();
         }
         else {
             System.out.println("你没有权限进入员工通道");

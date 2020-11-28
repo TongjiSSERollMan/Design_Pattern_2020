@@ -9,102 +9,102 @@ import java.util.Map;
 /**
  * @author Mrcopytuo
  *
- * 员工业务对象
+ * 货物业务对象
  */
 
-public class WorkerBusinessObject {
-    //private List<WorkerTransferObject> workers;
-    private Map<Integer,WorkerTransferObject> workerMap;
+public class GoodsBusinessObject {
+    //private List<GoodsTransferObject> goods;
+    private Map<Integer,GoodsTransferObject> goodMap;
 
     /**
-     * WorkerBusinessObject构造器
+     * GoodBusinessObject构造器
      */
-    public WorkerBusinessObject(){
-        workerMap = new HashMap<Integer, WorkerTransferObject>();
+    public GoodsBusinessObject(){
+        goodMap = new HashMap<Integer, GoodsTransferObject>();
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerBusinessObject",
-                        "WorkerBusinessObject",
+                        "GoodBusinessObject",
+                        "GoodBusinessObject",
                         String.valueOf(System.identityHashCode(this)),
-                        "WorkerBusinessObject构造器"
+                        "GoodBusinessObject构造器"
                 )
         );
     }
 
     /**
-     * 添加员工
+     * 添加货物
      */
-    public void addWorker(WorkerTransferObject worker){
-        workerMap.put(worker.getId(),worker);
+    public void addWorker(GoodsTransferObject good){
+        goodMap.put(good.getId(),good);
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerBusinessObject",
+                        "GoodBusinessObject",
                         "addWorker",
                         String.valueOf(System.identityHashCode(this)),
-                        "添加员工"
+                        "添加货物"
                 )
         );
     }
 
     /**
-     * 移除员工
+     * 移除货物
      */
-    public void deleteWorker(WorkerTransferObject worker){
-        workerMap.remove(worker.getId());
+    public void deleteWorker(GoodsTransferObject good){
+        goodMap.remove(good.getId());
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerBusinessObject",
+                        "GoodBusinessObject",
                         "deleteWorker",
                         String.valueOf(System.identityHashCode(this)),
-                        "移除员工"
+                        "移除货物"
                 )
         );
-        System.out.println(worker.getName()+" 已经被移除");
+        System.out.println(good.getName()+" 已经被移除");
     }
 
     /**
-     * 获取员工表
+     * 获取货物表
      */
-    public Map<Integer,WorkerTransferObject> getAllWorkers(){
+    public Map<Integer,GoodsTransferObject> getAllWorkers(){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerBusinessObject",
+                        "GoodBusinessObject",
                         "getAllWorkers",
                         String.valueOf(System.identityHashCode(this)),
-                        "获取员工表"
+                        "获取货物表"
                 )
         );
-        return workerMap;
+        return goodMap;
     }
 
     /**
-     * 获取员工信息
+     * 获取货物信息
      */
-    public WorkerTransferObject getWorker(int id){
+    public GoodsTransferObject getWorker(int id){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerBusinessObject",
+                        "GoodBusinessObject",
                         "getWorkers",
                         String.valueOf(System.identityHashCode(this)),
-                        "获取员工信息"
+                        "获取货物信息"
                 )
         );
-        return workerMap.get(id);
+        return goodMap.get(id);
     }
 
     /**
-     * 更新员工数据
+     * 更新货物数据
      */
-    public void updateWorker(WorkerTransferObject worker){
+    public void updateWorker(GoodsTransferObject good){
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerBusinessObject",
+                        "GoodBusinessObject",
                         "getWorkers",
                         String.valueOf(System.identityHashCode(this)),
-                        "更新员工数据"
+                        "更新货物数据"
                 )
         );
-        workerMap.put(worker.getId(),worker);
-        System.out.println("员工数据已更新");
+        goodMap.put(good.getId(),good);
+        System.out.println("货物数据已更新");
     }
 }

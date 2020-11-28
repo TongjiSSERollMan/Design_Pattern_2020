@@ -5,54 +5,54 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
 
 /**
  * @author Mrcopytuo
- *
- * 员工传输对象
+ * <p>
+ * 货物传输对象
  */
 
-public class WorkerTransferObject {
+public class GoodsTransferObject {
     private String name;
-    private String job;
+    private int count;
     private int id;
 
     /**
-     * WorkerTransferObject构造器
+     * GoodsTransferObject构造器
      */
-    WorkerTransferObject(int id, String name, String job){
-        this.name=name;
-        this.job=job;
-        this.id=id;
+    GoodsTransferObject(int id, String name, int count) {
+        this.name = name;
+        this.count = count;
+        this.id = id;
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
+                        "GoodsTransferObject",
                         String.valueOf(System.identityHashCode(this)),
-                        "WorkerTransferObject构造器"
+                        "GoodsTransferObject构造器"
                 )
         );
     }
 
     /**
-     * 姓名getter
+     * 货物名getter
      */
-    public String getName(){
+    public String getName() {
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
                         "getName",
                         String.valueOf(System.identityHashCode(this)),
-                        "姓名getter"
+                        "货物名getter"
                 )
         );
         return name;
     }
 
     /**
-     *ID getter
+     * ID getter
      */
-    public int getId(){
+    public int getId() {
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
                         "getId",
                         String.valueOf(System.identityHashCode(this)),
                         "ID getter"
@@ -62,62 +62,62 @@ public class WorkerTransferObject {
     }
 
     /**
-     *职业 getter
+     * 数量 getter
      */
-    public String getJob(){
+    public int getCount() {
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
                         "getJob",
                         String.valueOf(System.identityHashCode(this)),
-                        "职业 getter"
+                        "数量 getter"
                 )
         );
-        return job;
+        return count;
     }
 
     /**
-     * 姓名setter
+     * 货物名setter
      */
-    public void setName(String name){
+    public void setName(String name) {
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
                         "setName",
                         String.valueOf(System.identityHashCode(this)),
-                        "姓名setter"
+                        "货物名setter"
                 )
         );
-        this.name=name;
+        this.name = name;
     }
 
     /**
      * ID setter
      */
-    public void setId(int id){
+    public void setId(int id) {
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
                         "setId",
                         String.valueOf(System.identityHashCode(this)),
                         "ID setter"
                 )
         );
-        this.id=id;
+        this.id = id;
     }
 
     /**
-     * 职业 setter
+     * 数量 setter
      */
-    public void  setJob(String job){
+    public void setCount(int count) {
         CallStackLogger.log(
                 new CallStackLogInfo(
-                        "WorkerTransferObject",
+                        "GoodsTransferObject",
                         "setJob",
                         String.valueOf(System.identityHashCode(this)),
-                        "职业 setter"
+                        "数量 setter"
                 )
         );
-        this.job=job;
+        this.count = count;
     }
 }

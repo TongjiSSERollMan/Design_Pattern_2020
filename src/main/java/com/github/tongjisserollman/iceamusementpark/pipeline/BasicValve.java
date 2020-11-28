@@ -8,6 +8,7 @@ import com.github.tongjisserollman.iceamusementpark.util.CallStackLogger;
  * <p>
  * 基础阀门
  */
+
 public class BasicValve implements Valve {
 
     protected Valve next;

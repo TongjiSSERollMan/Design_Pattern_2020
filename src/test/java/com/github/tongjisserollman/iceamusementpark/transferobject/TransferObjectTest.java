@@ -2,29 +2,27 @@ package com.github.tongjisserollman.iceamusementpark.transferobject;
 
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class TransferObjectTest {
     @org.junit.jupiter.api.Test
-    void testTransferObject(){
+    void testTransferObject() {
         System.out.println("传输对象模式测试：");
-        WorkerBusinessObject workerBusinessObject = new WorkerBusinessObject();
-        WorkerTransferObject worker1 = new WorkerTransferObject(1,"琉星","商店店员");
-        WorkerTransferObject worker2 = new WorkerTransferObject(10,"十月","玩偶演员");
-        WorkerTransferObject worker3 = new WorkerTransferObject(13,"贪狼","商店店长");
-        workerBusinessObject.addWorker(worker1);
-        workerBusinessObject.addWorker(worker2);
-        workerBusinessObject.addWorker(worker3);
+        GoodsBusinessObject GoodBusinessObject = new GoodsBusinessObject();
+        GoodsTransferObject good1 = new GoodsTransferObject(1, "魔法棒", 1);
+        GoodsTransferObject good2 = new GoodsTransferObject(10, "帽子", 2);
+        GoodsTransferObject good3 = new GoodsTransferObject(13, "钥匙扣", 3);
+        GoodBusinessObject.addWorker(good1);
+        GoodBusinessObject.addWorker(good2);
+        GoodBusinessObject.addWorker(good3);
 
-        for (Map.Entry<Integer,WorkerTransferObject> entry : workerBusinessObject.getAllWorkers().entrySet()){
-            System.out.println("姓名："+entry.getValue().getName()+" id:"+entry.getKey());
+        for (Map.Entry<Integer, GoodsTransferObject> entry : GoodBusinessObject.getAllWorkers().entrySet()) {
+            System.out.println("货物名：" + entry.getValue().getName() + " id:" + entry.getKey());
         }
 
-        WorkerTransferObject worker = new WorkerTransferObject(13,"潇洒哥", "清洁工");
-        workerBusinessObject.updateWorker(worker);
+        GoodsTransferObject good = new GoodsTransferObject(13, "外套", 4);
+        GoodBusinessObject.updateWorker(good);
 
-        WorkerTransferObject getWorker = workerBusinessObject.getWorker(13);
-        System.out.println("查看单个员工：");
-        System.out.println("姓名："+getWorker.getName()+" id："+getWorker.getId());
+        GoodsTransferObject getWorker = GoodBusinessObject.getWorker(13);
+        System.out.println("查看单个货物：");
+        System.out.println("货物名：" + getWorker.getName() + " id：" + getWorker.getId());
     }
 }
