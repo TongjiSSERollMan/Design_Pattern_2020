@@ -13,19 +13,19 @@ class TransferObjectTest {
         GoodsTransferObject good1 = new GoodsTransferObject(1, "魔法棒", 1);
         GoodsTransferObject good2 = new GoodsTransferObject(10, "帽子", 2);
         GoodsTransferObject good3 = new GoodsTransferObject(13, "钥匙扣", 3);
-        GoodBusinessObject.addWorker(good1);
-        GoodBusinessObject.addWorker(good2);
-        GoodBusinessObject.addWorker(good3);
+        GoodBusinessObject.addGoods(good1);
+        GoodBusinessObject.addGoods(good2);
+        GoodBusinessObject.addGoods(good3);
 
-        for (Map.Entry<Integer, GoodsTransferObject> entry : GoodBusinessObject.getAllWorkers().entrySet()) {
+        for (Map.Entry<Integer, GoodsTransferObject> entry : GoodBusinessObject.getAllGoodss().entrySet()) {
             System.out.println("货物名：" + entry.getValue().getName() + " id:" + entry.getKey());
         }
 
         GoodsTransferObject good = new GoodsTransferObject(13, "外套", 4);
-        GoodBusinessObject.updateWorker(good);
+        GoodBusinessObject.updateGoods(good);
 
-        GoodsTransferObject getWorker = GoodBusinessObject.getWorker(13);
+        GoodsTransferObject getGoods = GoodBusinessObject.getGoods(13);
         System.out.println("查看单个货物：");
-        System.out.println("货物名：" + getWorker.getName() + " id：" + getWorker.getId());
+        System.out.println("货物名：" + getGoods.getName() + " id：" + getGoods.getId());
     }
 }
